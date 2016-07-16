@@ -3,7 +3,7 @@
 open XPlot.GoogleCharts
 open TheGamma
 
-type Olympics = RestProvider<"http://localhost:10042/olympics", Timeout=3600>
+type Olympics = RestProvider<"http://localhost:10042/olympics", Timeout=3601>
 
 let allData = Olympics.data |> Array.ofSeq
 
@@ -24,9 +24,9 @@ allData
 |> Seq.iter (printfn "%A")
 
 Seq.concat
-  [ // Olympics.``by athlete``.``United States``.``PHELPS, Michael``.data
-    // Olympics.``by athlete``.``United States``.``PHELPS Michael``.data
-    Olympics.``by athlete``.Czechoslovakia.``CASLAVSKA, Vera``.data
+  [ Olympics.``by athlete``.``United States``.``PHELPS, Michael``.data
+    Olympics.``by athlete``.``United States``.``PHELPS Michael``.data
+    //Olympics.``by athlete``.Czechoslovakia.``CASLAVSKA, Vera``.data
      ]
 |> Seq.iter (fun i -> printfn "%s (%d) - %s, %s" i.City i.Edition i.Sport i.Event)
 

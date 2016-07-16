@@ -390,7 +390,7 @@ cts.Cancel()
 #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
 open FSharp.Data
 
-type Medals = CsvProvider<"guardian/medals-1896-2008.csv">
+type Medals = CsvProvider<const(__SOURCE_DIRECTORY__ + "/guardian/medals-1896-2008.csv")>
 
 let known = 
   [ for r in Medals.GetSample().Rows ->  
@@ -430,6 +430,16 @@ let findDiscipline words =
   |> Seq.sortBy (fun (s2, d2, e2) -> -fuzzyMatch words [s2; d2; e2])
   |> Seq.head
 
+let normalizeName (s:string) = 
+  try
+    let c = s.ToCharArray()    
+    let mutable i = 0
+    while not (System.Char.IsUpper(c.[i])) do i <- i + 1 // skip 'le ', 'van der ' and such
+    while i < s.Length && System.Char.IsUpper(c.[i]) do i <- i + 1
+    System.String(c.[ .. i-1]).ToUpper() + if i = s.Length then "" else "," + System.String(c.[i ..])
+  with e ->
+    failwithf "Name: %s" s
+
 // --------------------------------------------------------------------------------------
 // Extracting medals from BBC
 // --------------------------------------------------------------------------------------
@@ -456,21 +466,22 @@ let extractMedals file =
       (matchPath discName p).text().Trim(),
       (matchPath sportName p).text().Trim() ]
 
-let newRows = seq {
-  let i = ref 0
-  for guid, ccode, cname, name in BbcAthletes.allAthletes do
-    incr i
-    if i.Value % 10 = 0 then printfn "%d/1782" i.Value;
-    for medal, disc, sport in extractMedals (downloadNodes (dir + "/" + guid)) do
-      let g, gg, disc = 
-        if disc.StartsWith("Men's ") then "M", "Men", disc.Substring("Men's ".Length)
-        elif disc.StartsWith("Women's ") then "W", "Women", disc.Substring("Women's ".Length)
-        else "X", "Unknown", disc
-      let sport, disc, event = findDiscipline [sport; disc]
-      yield Medals.Row("London", 2012, sport, disc, name, ccode, gg, event, g, medal) }
+let newRows = 
+ [| let i = ref 0
+    for guid, ccode, cname, name in BbcAthletes.allAthletes do
+      incr i
+      if i.Value % 10 = 0 then printfn "%d/1782" i.Value;
+      for medal, disc, sport in extractMedals (downloadNodes (dir + "/" + guid)) do
+        let g, gg, disc = 
+          if disc.StartsWith("Men's ") then "M", "Men", disc.Substring("Men's ".Length)
+          elif disc.StartsWith("Women's ") then "W", "Women", disc.Substring("Women's ".Length)
+          else "X", "Unknown", disc
+        let sport, disc, event = findDiscipline [sport; disc]
+        yield Medals.Row("London", 2012, sport, disc, normalizeName name, ccode, gg, event, g, medal) |]
 
 Medals
-  .GetSample() 
+  //.Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Event_gender,Medal")
+  .GetSample()
   .Append(newRows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
 
 
