@@ -484,6 +484,20 @@ Medals
   .GetSample()
   .Append(newRows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
 
+// --------------------------------------------------------------------------------------
+//
+// --------------------------------------------------------------------------------------
 
+let merged = Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
+let expanded = CsvFile.Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Medal,Gold,Silver,Bronze")
 
+let nrows = 
+  [| for r in merged.Rows ->
+      let gold = if r.Medal = "Gold" then "1" else "0"
+      let silver = if r.Medal = "Silver" then "1" else "0"
+      let bronze = if r.Medal = "Bronze" then "1" else "0"
+      let gender = match r.Event_gender with "M" -> " men" | "W" -> " women" | _ -> ""
+      CsvRow(expanded, [|r.City; string r.Edition; r.Sport; r.Discipline; r.Athlete; 
+        r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
 
+expanded.Append(nrows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
