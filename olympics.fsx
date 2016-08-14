@@ -503,7 +503,8 @@ let nrows =
       let bronze = if r.Medal = "Bronze" then "1" else "0"
       let gender = match r.Event_gender with "M" -> " men" | "W" -> " women" | _ -> ""
       CsvRow(expanded, [|sprintf "%s (%d)" r.City r.Edition; string r.Edition; r.Sport; 
-        (if r.Discipline = "Artistic G." then "Artistic Gymnastics" else r.Discipline); 
+        r.Discipline.Replace("G.", "Gymnastics").Replace("volley", "volleyball").Replace("Gre-R","Greco-Romano")
+          .Replace("Pentath", "Pentathlon").Replace("Free.", "Freestyle").Replace("S.", "Swimming"); 
         nicerName r.Athlete; r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
 
 System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
