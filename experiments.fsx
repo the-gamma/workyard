@@ -12,6 +12,10 @@ type Olympics = RestProvider<"http://localhost:10042/olympics", 1000>
 
 let allData = Olympics.data |> Array.ofSeq
 
+allData
+|> Seq.groupBy (fun c -> [string c.Year; c.Team])
+|> Seq.iter (fun (k, v) -> printfn "%A" k)
+
 // ----------------------------------------------------------------------------
 // Best individual medalists
 // ----------------------------------------------------------------------------

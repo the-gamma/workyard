@@ -489,7 +489,12 @@ Medals
 // --------------------------------------------------------------------------------------
 
 let merged = Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
-let expanded = CsvFile.Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Medal,Gold,Silver,Bronze")
+let expanded = CsvFile.Parse("Games,Year,Sport,Discipline,Athlete,Team,Gender,Event,Medal,Gold,Silver,Bronze")
+
+let nicerName (s:string) = 
+  match s.Split(',') |> List.ofArray with
+  | last::firsts -> (String.concat " " (firsts @ [last.[0].ToString().ToUpper() + last.[1 ..].ToLower()])).Trim()
+  | _ -> failwithf "Wrong name: %s" s
 
 let nrows = 
   [| for r in merged.Rows ->
@@ -497,7 +502,9 @@ let nrows =
       let silver = if r.Medal = "Silver" then "1" else "0"
       let bronze = if r.Medal = "Bronze" then "1" else "0"
       let gender = match r.Event_gender with "M" -> " men" | "W" -> " women" | _ -> ""
-      CsvRow(expanded, [|r.City; string r.Edition; r.Sport; r.Discipline; r.Athlete; 
-        r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
+      CsvRow(expanded, [|sprintf "%s (%d)" r.City r.Edition; string r.Edition; r.Sport; 
+        (if r.Discipline = "Artistic G." then "Artistic Gymnastics" else r.Discipline); 
+        nicerName r.Athlete; r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
 
+System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
 expanded.Append(nrows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
