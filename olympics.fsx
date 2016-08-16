@@ -167,6 +167,11 @@ let splitLast n path =
 let firstTextPath text root = 
   root |> collectPaths [] (function (HtmlText(s)) -> s.ToLower().Trim() = text | _ -> false) 
 
+let firstElementPath tag attr attrval root = 
+  root |> collectPaths [] (function 
+    | HtmlElement(t,attrs,_) when t = tag && Seq.contains (HtmlAttribute(attr, attrval)) attrs -> true
+    | _ -> false) 
+
 let downloadNodes (url:string) =  
   let html = 
     if System.Uri(url).IsFile then
@@ -390,11 +395,25 @@ cts.Cancel()
 #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
 open FSharp.Data
 
+type Codes = HtmlProvider<const(__SOURCE_DIRECTORY__ + "/gothos/countrycodes.html")>
+
+let codes = 
+  [ yield "Serbia", "SRB"
+    for r in Codes.GetSample().Tables.``3-Digit Country Codes``.Rows ->
+      r.Country.Trim('*'), r.Code ]
+let codesLookup = dict [ for c, code in codes -> code, c ]
+
 type Medals = CsvProvider<const(__SOURCE_DIRECTORY__ + "/guardian/medals-1896-2008.csv")>
 
 let known = 
   [ for r in Medals.GetSample().Rows ->  
       r.Sport, r.Discipline, r.Event ] 
+  |> Seq.distinct 
+  |> List.ofSeq
+
+let knownAthletes = 
+  [ for r in Medals.GetSample().Rows ->  
+      r.Athlete, codesLookup.[r.NOC] ] 
   |> Seq.distinct 
   |> List.ofSeq
 
@@ -429,6 +448,19 @@ let findDiscipline words =
   known 
   |> Seq.sortBy (fun (s2, d2, e2) -> -fuzzyMatch words [s2; d2; e2])
   |> Seq.head
+
+let findCountry name = 
+  codes
+  |> Seq.sortBy (fun (n, code) -> -fuzzyMatch [n] [name])
+  |> Seq.head
+
+let findAthlete athlete country = 
+  knownAthletes 
+  |> Seq.filter (fun (a, c) -> c = country)
+  |> Seq.map (fun (a, c) -> a, fuzzyMatch [a] [athlete])
+  |> Seq.sortBy (fun (a, n) -> -n)
+  |> Seq.map (fun (a, n) -> a, float n / float (max a.Length athlete.Length))
+  |> Seq.tryHead
 
 let normalizeName (s:string) = 
   try
@@ -485,7 +517,120 @@ Medals
   .Append(newRows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
 
 // --------------------------------------------------------------------------------------
-//
+// Get all olympic games, sports and events
+// --------------------------------------------------------------------------------------
+
+module Rio2016 = 
+
+  let list = downloadNodes "http://www.bbc.co.uk/sport/olympics/36373149"
+  let p1 = firstTextPath "swimming: men's 100m butterfly" list |> Seq.head
+  let p2 = firstTextPath "wrestling freestyle: men's 86kg" list |> Seq.head
+  let pp, ptext = unionPaths p1 p2 |> Option.get |> splitLast 2
+  let aa, atext = ptext |> splitLast 1
+
+  let events = 
+    matchPath pp list |> Seq.choose (fun p ->
+        try Some(p.innerText().Trim(), (matchPath aa p).head().attr("href") )
+        with e -> None ) |> List.ofSeq
+
+  let completed = 
+    events 
+    |> Seq.filter (fun (s, u) -> s.EndsWith("*"))
+    |> Seq.map (fun (s, u) ->
+        let s = s.TrimEnd('*')
+        match s.Split(':') with 
+        | [| s; e |] -> s, e, u
+        | [| s |] -> "Archery", s, u)
+
+  async {
+    let wc = new System.Net.WebClient()
+    for _, _, u in completed do
+      printfn "%s" u
+      let f = __SOURCE_DIRECTORY__ + "/rio2016/" + u.Substring(1).Replace('/', '-')
+      if not (System.IO.File.Exists(f)) then
+        wc.DownloadFile("http://www.bbc.co.uk" + u, f) } |> Async.Start
+    
+
+  let medals = downloadNodes "http://www.bbc.co.uk/sport/olympics/rio-2016/results/sports/archery/mens-individual"
+  
+  let m1 = firstTextPath "bonchan ku" medals |> Seq.head
+  let m2 = firstTextPath "brady ellison" medals |> Seq.head
+  let c1 = firstTextPath "south korea" medals |> Seq.head
+  let c2 = firstTextPath "united states" medals |> Seq.head
+  let d1 = firstElementPath "i" "class" "ico ico-medal ico-medal--gold events-medal__icon" medals |> Seq.head
+  let d2 = firstElementPath "i" "class" "ico ico-medal ico-medal--bronze events-medal__icon" medals |> Seq.head
+
+  let mm = unionPaths m1 m2 |> Option.get 
+  let cc = unionPaths c1 c2 |> Option.get 
+  let dd = unionPaths d1 d2 |> Option.get 
+  let prefix, [rm; rc; rd] = dropCommonPrefix [ mm; cc; dd ]
+  
+  let getMedal (s:string) =
+    if s.Contains "ico-medal--gold" then "Gold"
+    elif s.Contains "ico-medal--silver" then "Silver"
+    elif s.Contains "ico-medal--bronze" then "Bronze"
+    else failwith "Unknown medal"
+
+  let getMedalists medals = 
+    [ for p in matchPath prefix medals ->
+        getMedal ((matchPath rd p).head().attr("class")),
+        (matchPath rm p).innerText().Trim(), 
+        (matchPath rc p).innerText().Trim() ]
+
+  let athletes = 
+    [ for e, s, u in completed do
+        let pg = downloadNodes (__SOURCE_DIRECTORY__ + "/rio2016/" + u.Substring(1).Replace('/', '-'))
+        for d, m, c in getMedalists pg -> m, c ]
+
+  for c in athletes |> Seq.map snd |> Seq.distinct do
+    printfn "%s --> %A" c (findCountry c)
+    
+  for a, c in athletes do
+    let c2, _ = findCountry c
+    match findAthlete a c2 with
+    | Some(a2, k) when k > 0.75 -> printfn "%s --- %A" a a2
+    | _ -> ()
+
+  for e, s, u in completed do
+    let pg = downloadNodes (__SOURCE_DIRECTORY__ + "/rio2016/" + u.Substring(1).Replace('/', '-'))
+    let sport, disc, event = findDiscipline [e; s]
+    printfn "\n%s: %s\n(%s, %s, %s)\n-------------------------------" e s sport disc event
+    for d, m, c in getMedalists pg do 
+      printfn " - %s: %s, %s" (d.ToUpper()) m c
+
+  let rioRows =     
+   [| let n = ref 0
+      for e, s, u in completed do
+        let sport, disc, event = findDiscipline [e; s]
+        let pg = downloadNodes (__SOURCE_DIRECTORY__ + "/rio2016/" + u.Substring(1).Replace('/', '-'))
+        for medal, name, country in getMedalists pg do
+          incr n
+          if n.Value % 10 = 0 then printfn "%d" n.Value
+
+          let c2, noc = findCountry country
+          let g, gg, disc = 
+            if (e+s).Contains("Men") then "M", "Men", disc
+            elif (e+s).Contains("Women") then "W", "Women", disc
+            else "X", "Unknown", disc
+          let sport, disc, event = findDiscipline [sport; disc]
+          
+          let name = 
+            if System.String.IsNullOrWhiteSpace name then "Team " + country else
+            match findAthlete name c2 with
+            | Some(name, k) when k > 0.75 -> name
+            | _ -> name
+
+          yield Medals.Row("Rio", 2016, sport, disc, name, noc, gg, event, g, medal) |]
+
+  System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-rio2016.csv")
+
+  Medals
+    .Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Event_gender,Medal")
+    .Append(rioRows)
+    .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-rio2016.csv")
+
+// --------------------------------------------------------------------------------------
+// Final cleanup
 // --------------------------------------------------------------------------------------
 
 let merged = Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
