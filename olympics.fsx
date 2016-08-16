@@ -399,6 +399,7 @@ type Codes = HtmlProvider<const(__SOURCE_DIRECTORY__ + "/gothos/countrycodes.htm
 
 let codes = 
   [ yield "Serbia", "SRB"
+    yield "Kosovo", "KOS"
     for r in Codes.GetSample().Tables.``3-Digit Country Codes``.Rows ->
       r.Country.Trim('*'), r.Code ]
 let codesLookup = dict [ for c, code in codes -> code, c ]
@@ -517,7 +518,7 @@ Medals
   .Append(newRows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
 
 // --------------------------------------------------------------------------------------
-// Get all olympic games, sports and events
+// Rio 2016 from BBC
 // --------------------------------------------------------------------------------------
 
 module Rio2016 = 
@@ -634,6 +635,51 @@ module Rio2016 =
     .Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Event_gender,Medal")
     .Append(rioRows)
     .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-rio2016.csv")
+
+  Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
+    .Append(rioRows)
+    .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged-all.csv")
+
+
+// --------------------------------------------------------------------------------------
+// Rio 2016 from BBC
+// --------------------------------------------------------------------------------------
+
+module Rio2016Olympic = 
+  open System.IO
+  open System.Text.RegularExpressions
+
+  let regex = Regex("pageAllMedalistsJson =([^<]*);[ \t\r\n]*<\/script>")
+  let page = Http.RequestString("https://www.rio2016.com/en/medal-count-athletes")
+  let json = regex.Match(page).Groups.[1].Value
+  File.WriteAllText(__SOURCE_DIRECTORY__ + "/rio2016/medals.json", json)  
+  
+  type Rio = JsonProvider<const(__SOURCE_DIRECTORY__ + "/rio2016/medals.json")>
+  
+  let rioRows =     
+   [| for p in Rio.GetSamples() do
+        for m in Seq.concat [ p.BronzeMedals; p.SilverMedals; p.GoldMedals ] do
+          let sport, disc, event = findDiscipline [m.EventName; m.SportName]
+          let name = normalizeName p.AthleteName
+          let noc = 
+            if p.CountryOdfCode = "" then 
+              if p.CountryName = "Kosovo" then "KOS" 
+              else failwith "Wrong country"
+            else p.CountryOdfCode
+          let g, gg, disc = 
+            if disc.StartsWith("Men's ") then "M", "Men", disc.Substring("Men's ".Length)
+            elif disc.StartsWith("Women's ") then "W", "Women", disc.Substring("Women's ".Length)
+            else "X", "Unknown", disc
+          let medal = m.MedalCategory
+          yield Medals.Row("Rio", 2016, sport, disc, name, noc, gg, event, g, medal) |]
+
+  System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-2016.csv")
+  System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-merged-all.csv")
+
+  Medals
+    .Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Event_gender,Medal")
+    .Append(rioRows)
+    .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-2016.csv")
 
   Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
     .Append(rioRows)

@@ -9,6 +9,7 @@ let usedCodes = [ for r in Medals.GetSample().Rows -> r.Team ] |> set
 type Codes = HtmlProvider<const(__SOURCE_DIRECTORY__ + "/gothos/countrycodes.html")>
 let codes = 
   [ yield "Serbia", "SRB"
+    yield "Kosovo", "KOS"
     for r in Codes.GetSample().Tables.``3-Digit Country Codes``.Rows do
       let n = r.Country.Trim('*') 
       if usedCodes.Contains r.Code then yield n, r.Code ]
@@ -45,7 +46,8 @@ let renames =
     "united kingdom (great britain)", "united kingdom"
     "virgin islands", "british virgin islands"
     "west germany", "germany"
-    "yugoslavia", "bosnia and herzegovina" ] |> dict
+    "yugoslavia", "bosnia and herzegovina"
+    "individual olympic athletes", "kuwait" (* true for Rio *) ] |> dict
 
 // produce json file with locations
 type Locations = JsonProvider<"""{"country":"USA", "coordinates":[1.2,2.0]}""">
