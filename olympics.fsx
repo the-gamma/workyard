@@ -451,7 +451,7 @@ let findDiscipline words =
 
 let findCountry name = 
   codes
-  |> Seq.sortBy (fun (n, code) -> -fuzzyMatch [n] [name])
+  |> Seq.sortBy (fun (n, code) -> -1.0 * (float (fuzzyMatch [n] [name])) / (float (max name.Length n.Length)))
   |> Seq.head
 
 let findAthlete athlete country = 
@@ -582,11 +582,16 @@ module Rio2016 =
         let pg = downloadNodes (__SOURCE_DIRECTORY__ + "/rio2016/" + u.Substring(1).Replace('/', '-'))
         for d, m, c in getMedalists pg -> m, c ]
 
+  let findCountry2 name = 
+    match name with 
+    | "Russia" -> findCountry "Russian Federation"
+    | _ -> findCountry name
+
   for c in athletes |> Seq.map snd |> Seq.distinct do
-    printfn "%s --> %A" c (findCountry c)
+    printfn "%s --> %A" c (findCountry2 c)
     
   for a, c in athletes do
-    let c2, _ = findCountry c
+    let c2, _ = findCountry2 c
     match findAthlete a c2 with
     | Some(a2, k) when k > 0.75 -> printfn "%s --- %A" a a2
     | _ -> ()
@@ -607,7 +612,7 @@ module Rio2016 =
           incr n
           if n.Value % 10 = 0 then printfn "%d" n.Value
 
-          let c2, noc = findCountry country
+          let c2, noc = findCountry2 country
           let g, gg, disc = 
             if (e+s).Contains("Men") then "M", "Men", disc
             elif (e+s).Contains("Women") then "W", "Women", disc
@@ -623,21 +628,28 @@ module Rio2016 =
           yield Medals.Row("Rio", 2016, sport, disc, name, noc, gg, event, g, medal) |]
 
   System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-rio2016.csv")
+  System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-merged-all.csv")
 
   Medals
     .Parse("City,Edition,Sport,Discipline,Athlete,NOC,Gender,Event,Event_gender,Medal")
     .Append(rioRows)
     .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-rio2016.csv")
 
+  Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
+    .Append(rioRows)
+    .Save(__SOURCE_DIRECTORY__ + "/guardian/medals-merged-all.csv")
+
+
 // --------------------------------------------------------------------------------------
 // Final cleanup
 // --------------------------------------------------------------------------------------
 
-let merged = Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged.csv")
+let merged = Medals.Load(__SOURCE_DIRECTORY__ + "/guardian/medals-merged-all.csv")
 let expanded = CsvFile.Parse("Games,Year,Sport,Discipline,Athlete,Team,Gender,Event,Medal,Gold,Silver,Bronze")
 
 let nicerName (s:string) = 
   match s.Split(',') |> List.ofArray with
+  | [last] when Seq.exists System.Char.IsLower last && Seq.exists System.Char.IsUpper last -> last
   | last::firsts -> (String.concat " " (firsts @ [last.[0].ToString().ToUpper() + last.[1 ..].ToLower()])).Trim()
   | _ -> failwithf "Wrong name: %s" s
 
