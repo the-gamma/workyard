@@ -40,6 +40,8 @@ Rio,2016,Aquatics,Swimming,"ADRIAN, Nathan",USA,Unknown,4x100m freestyle relay,X
 Rio,2016,Gymnastics,Artistic G.,"WHITLOCK, Max",GBR,Unknown,individual all-round,X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"WHITLOCK, Max",GBR,Unknown,pommel horse,X,Gold
 Rio,2016,Gymnastics,Artistic G.,"WHITLOCK, Max",GBR,Unknown,floor exercises,X,Gold
+Rio,2016,Athletics,Athletics,"BOLT, Usain",JAM,Unknown,200m,X,Gold
+Rio,2016,Athletics,Athletics,"BOLT, Usain",JAM,Unknown,100m,X,Gold
 Rio,2016,Shooting,Shooting,"CAMPRIANI, Niccolo",ITA,Unknown,50m rifle 3 positions (3x40 shots),X,Gold
 Rio,2016,Shooting,Shooting,"CAMPRIANI, Niccolo",ITA,Unknown,10m air rifle (40 shots),X,Gold
 Rio,2016,Archery,Archery,"CHANG, Hyejin",KOR,Unknown,individual FITA round,X,Gold
@@ -174,6 +176,7 @@ Rio,2016,Cycling,Cycling Road,"VAN, DER BREGGEN Anna",NED,Unknown,individual tim
 Rio,2016,Cycling,Cycling Road,"VAN, DER BREGGEN Anna",NED,Unknown,individual road race,X,Gold
 Rio,2016,Cycling,Cycling Track,"VOGEL, Kristina",GER,Unknown,Team Sprint,X,Bronze
 Rio,2016,Cycling,Cycling Track,"VOGEL, Kristina",GER,Unknown,Sprint indivual,X,Gold
+Rio,2016,Taekwondo,Taekwondo,"ABUGHAUSH, Ahmad",JOR,Unknown,58 - 68 kg,X,Gold
 Rio,2016,Badminton,Badminton,"AHMAD, Tontowi",INA,Unknown,doubles,X,Gold
 Rio,2016,Fencing,Fencing,"AKHMATKHUZIN, Artur",RUS,Unknown,foil team,X,Gold
 Rio,2016,Shooting,Shooting,"ALDEEHANI, Fehaid",IOA,Unknown,double trap (120 targets),X,Gold
@@ -193,7 +196,6 @@ Rio,2016,Judo,Judo,"BASILE, Fabio",ITA,Unknown,61 - 66kg (middleweight),X,Gold
 Rio,2016,Rugby,Rugby,"BECK, Nicole",AUS,Unknown,rugby,X,Gold
 Rio,2016,Rowing,Rowing,"BENNETT, Paul",GBR,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Aquatics,Swimming,"BENTZ, Gunnar",USA,Unknown,4x200m freestyle relay,X,Gold
-Rio,2016,Athletics,Athletics,"BOLT, Usain",JAM,Unknown,100m,X,Gold
 Rio,2016,Rowing,Rowing,"BOND, Hamish",NZL,Unknown,pair-oared shell with coxswain (2+),X,Gold
 Rio,2016,Fencing,Fencing,"BOREL, Yannick",FRA,Unknown,épée team,X,Gold
 Rio,2016,Wrestling,Wrestling Gre-R,"BORRERO, MOLINA Ismael",CUB,Unknown,- 66.6kg (lightweight),X,Gold
@@ -202,13 +204,17 @@ Rio,2016,Sailing,Sailing,"BOUWMEESTER, Marit",NED,Unknown,Laser Radial - One Per
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"BRENDEL, Sebastian",GER,Unknown,C-1 1000m (canoe single),X,Gold
 Rio,2016,Rowing,Rowing,"BRENNAN, Kimberley",AUS,Unknown,single sculls (1x),X,Gold
 Rio,2016,Athletics,Athletics,"BROWNLEE, Alistair",GBR,Unknown,triathlon (long jump / shot put / 100 yards),X,Gold
+Rio,2016,Hockey,Hockey,"BRUNET, Manuel",ARG,Unknown,hockey,X,Gold
 Rio,2016,Cycling,Cycling Track,"BURKE, Steven",GBR,Unknown,"1980 yards Pursuit, Team",X,Gold
+Rio,2016,Sailing,Sailing,"BURLING, Peter",NZL,Unknown,49er - Skiff,X,Gold
 Rio,2016,Sailing,Sailing,"BURTON, Tom",AUS,Unknown,single-handed dinghy open (Laser),X,Gold
+Rio,2016,Hockey,Hockey,"CALLIONI, Facundo",ARG,Unknown,hockey,X,Gold
 Rio,2016,Aquatics,Swimming,"CAMPBELL, Bronte",AUS,Unknown,4x100m freestyle relay,X,Gold
 Rio,2016,Cycling,Cycling Road,"CANCELLARA, Fabian",SUI,Unknown,individual time trial,X,Gold
 Rio,2016,Sailing,Sailing,"CARRANZA, SAROLI Cecilia",ARG,Unknown,0.5-1t,X,Gold
 Rio,2016,Athletics,Athletics,"CARTER, Michelle",USA,Unknown,shot put,X,Gold
 Rio,2016,Rugby,Rugby,"CASLICK, Charlotte",AUS,Unknown,rugby,X,Gold
+Rio,2016,Volleyball,Beach volley.,"CERUTTI, Alison",BRA,Unknown,beach volleyball,X,Gold
 Rio,2016,Wrestling,Wrestling Gre-R,"CHAKVETADZE, Davit",RUS,Unknown,76 - 85kg,X,Gold
 Rio,2016,Canoe / Kayak,Canoe / Kayak S,"CHEBAN, Iurii",UKR,Unknown,C-1 (canoe single),X,Gold
 Rio,2016,Aquatics,Diving,"CHEN, Aisen",CHN,Unknown,10m platform,X,Gold
@@ -225,6 +231,7 @@ Rio,2016,Boxing,Boxing,"CONCEICAO, Robson",BRA,Unknown,60 - 63.5kg (light-welter
 Rio,2016,Aquatics,Swimming,"CONGER, Jack",USA,Unknown,4x200m freestyle relay,X,Gold
 Rio,2016,Aquatics,Swimming,"CORDES, Kevin",USA,Unknown,4x100m medley relay,X,Gold
 Rio,2016,Canoe / Kayak,Canoe / Kayak S,"CRAVIOTTO, Saul",ESP,Unknown,C-2 (canoe double),X,Gold
+Rio,2016,Athletics,Athletics,"CROUSER, Ryan",USA,Unknown,shot put,X,Gold
 Rio,2016,Athletics,Athletics,"DA, SILVA Thiago Braz",BRA,Unknown,pole vault,X,Gold
 Rio,2016,Rugby,Rugby,"DAKUWAQA, Ro",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Rugby,Rugby,"DALTON, Chloe",AUS,Unknown,rugby,X,Gold
@@ -240,6 +247,7 @@ Rio,2016,Rowing,Rowing,"DRYSDALE, Mahe",NZL,Unknown,single sculls (1x),X,Gold
 Rio,2016,Rowing,Rowing,"DURANT, Scott",GBR,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Boxing,Boxing,"DUSMATOV, Hasanboy",UZB,Unknown,72.57 - 79.38kg (light-heavyweight),X,Gold
 Rio,2016,Fencing,Fencing,"DYACHENKO, Ekaterina",RUS,Unknown,sabre team,X,Gold
+Rio,2016,Athletics,Athletics,"EATON, Ashton",USA,Unknown,decathlon,X,Gold
 Rio,2016,Rowing,Rowing,"ELMORE, Amanda",USA,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Shooting,Shooting,"ENGLEDER, Barbara",GER,Unknown,50m rifle 3 positions (3x40 shots),X,Gold
 Rio,2016,Rugby,Rugby,"ETHERIDGE, Gemma",AUS,Unknown,rugby,X,Gold
@@ -253,11 +261,13 @@ Rio,2016,Canoe / Kayak,Canoe / Kayak F,"GARGAUD, CHANUT Denis",FRA,Unknown,C-1 1
 Rio,2016,Fencing,Fencing,"GAROZZO, Daniele",ITA,Unknown,foil individual,X,Gold
 Rio,2016,Fencing,Fencing,"GAVRILOVA, Yuliya",RUS,Unknown,sabre team,X,Gold
 Rio,2016,Fencing,Fencing,"GHERMAN, Simona",ROU,Unknown,épée team,X,Gold
+Rio,2016,Hockey,Hockey,"GILARDI, Juan",ARG,Unknown,hockey,X,Gold
 Rio,2016,Shooting,Shooting,"GLASNOVIC, Josip",CRO,Unknown,trap (125 targets),X,Gold
 Rio,2016,Rowing,Rowing,"GLOVER, Helen",GBR,Unknown,pair-oared shell with coxswain (2+),X,Gold
 Rio,2016,Rowing,Rowing,"GOBBO, Tessa",USA,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Cycling,Cycling Track,"GONG, Jinjie",CHN,Unknown,Team Sprint,X,Gold
 Rio,2016,Rowing,Rowing,"GOTREL, Matt",GBR,Unknown,eight with coxswain (8+),X,Gold
+Rio,2016,Sailing,Sailing,"GRAEL, Martine",BRA,Unknown,49er - Skiff,X,Gold
 Rio,2016,Rugby,Rugby,"GREEN, Ellia",AUS,Unknown,rugby,X,Gold
 Rio,2016,Rowing,Rowing,"GREGORY, Alex",GBR,Unknown,four-oared shell with coxswain (4-),X,Gold
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"GROSS, Marcus",GER,Unknown,C-2 1000m (canoe double),X,Gold
@@ -279,23 +289,30 @@ Rio,2016,Aquatics,Swimming,"HORTON, Mack",AUS,Unknown,400m freestyle,X,Gold
 Rio,2016,Rowing,Rowing,"HOUIN, Pierre",FRA,Unknown,lightweight double sculls (2x),X,Gold
 Rio,2016,Weightlifting,Weightlifting,"HSU, Shu-Ching",TPE,Unknown,53kg,X,Gold
 Rio,2016,Athletics,Athletics,"IBARGUEN, Caterine",COL,Unknown,triple jump,X,Gold
+Rio,2016,Hockey,Hockey,"IBARRA, Isidoro",ARG,Unknown,hockey,X,Gold
+Rio,2016,Hockey,Hockey,"IBARRA, Pedro",ARG,Unknown,hockey,X,Gold
 Rio,2016,Wrestling,Wrestling Free.,"ICHO, Kaori",JPN,Unknown,54 - 58kg,X,Gold
 Rio,2016,Aquatics,Swimming,"ISHCHENKO, Natalia",RUS,Unknown,100m freestyle,X,Gold
 Rio,2016,Athletics,Athletics,"JEBET, Ruth",BRN,Unknown,3000m steeplechase,X,Gold
 Rio,2016,Fencing,Fencing,"JERENT, Daniel",FRA,Unknown,épée team,X,Gold
 Rio,2016,Shooting,Shooting,"JIN, Jongoh",KOR,Unknown,50m pistol (60 shots),X,Gold
+Rio,2016,Taekwondo,Taekwondo,"JONES, Jade",GBR,Unknown,49 - 57 kg,X,Gold
 Rio,2016,Shooting,Shooting,"JUNGHAENEL, Henri",GER,Unknown,50m rifle prone (60 shots),X,Gold
 Rio,2016,Aquatics,Swimming,"KANETO, Rie",JPN,Unknown,200m breaststroke,X,Gold
 Rio,2016,Gymnastics,Artistic G.,"KATO, Ryohei",JPN,Unknown,"team, horizontal bar",X,Gold
+Rio,2016,Wrestling,Wrestling Free.,"KAWAI, Risako",JPN,Unknown,57 - 63kg (featherweight),X,Gold
 Rio,2016,Judo,Judo,"KELMENDI, Majlinda",KOS,Unknown,48 - 52kg (half-lightweight),X,Gold
 Rio,2016,Judo,Judo,"KHALMURZAEV, Khasan",RUS,Unknown,73 - 81kg (half-middleweight),X,Gold
 Rio,2016,Taekwondo,Taekwondo,"KIM, Sohui",KOR,Unknown,- 49 kg,X,Gold
 Rio,2016,Archery,Archery,"KIM, Woojin",KOR,Unknown,team round 60y,X,Gold
 Rio,2016,Athletics,Athletics,"KIPRUTO, Conseslus",KEN,Unknown,3000m steeplechase,X,Gold
 Rio,2016,Athletics,Athletics,"KIPYEGON, Faith Chepngetich",KEN,Unknown,1500m,X,Gold
+Rio,2016,Athletics,Athletics,"KOLAK, Sara",CRO,Unknown,javelin throw,X,Gold
 Rio,2016,Rugby,Rugby,"KOLINISAU, Osea",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Judo,Judo,"KRPALEK, Lukas",CZE,Unknown,90 - 100kg (half-heavyweight),X,Gold
 Rio,2016,Rugby,Rugby,"KUNATANI, Semi",FIJ,Unknown,rugby,X,Gold
+Rio,2016,Sailing,Sailing,"KUNZE, Kahena",BRA,Unknown,49er - Skiff,X,Gold
+Rio,2016,Boxing,Boxing,"LA, CRUZ Julio Cesar",CUB,Unknown,75 - 81kg (light-heavyweight),X,Gold
 Rio,2016,Equestrian,Eventing,"LAGHOUAG, Karim",FRA,Unknown,team,X,Gold
 Rio,2016,Sailing,Sailing,"LANGE, Santiago",ARG,Unknown,0.5-1t,X,Gold
 Rio,2016,Rowing,Rowing,"LANGRIDGE, Matt",GBR,Unknown,eight with coxswain (8+),X,Gold
@@ -310,6 +327,7 @@ Rio,2016,Table Tennis,Table Tennis,"LIU, Shiwen",CHN,Unknown,team,X,Gold
 Rio,2016,Aquatics,Swimming,"LOCHTE, Ryan",USA,Unknown,4x200m freestyle relay,X,Gold
 Rio,2016,Rowing,Rowing,"LOGAN, Eleanor",USA,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Weightlifting,Weightlifting,"LONG, Qingquan",CHN,Unknown,"- 56kg, total (bantamweight)",X,Gold
+Rio,2016,Hockey,Hockey,"LOPEZ, Juan",ARG,Unknown,hockey,X,Gold
 Rio,2016,Tennis,Tennis,"LOPEZ, Marc",ESP,Unknown,doubles,X,Gold
 Rio,2016,Wrestling,Wrestling Gre-R,"LOPEZ, NUNEZ Mijain",CUB,Unknown,100 - 130kg (super heavyweight),X,Gold
 Rio,2016,Rowing,Rowing,"LOULOUDIS, Constantine",GBR,Unknown,four-oared shell with coxswain (4-),X,Gold
@@ -320,16 +338,21 @@ Rio,2016,Rowing,Rowing,"MADAJ, Natalia",POL,Unknown,double sculls (2x),X,Gold
 Rio,2016,Tennis,Tennis,"MAKAROVA, Ekaterina",RUS,Unknown,doubles,X,Gold
 Rio,2016,Sailing,Sailing,"MARENIC, Igor",CRO,Unknown,470 - Two Person Dinghy,X,Gold
 Rio,2016,Aquatics,Swimming,"MARGALIS, Melanie",USA,Unknown,4x200m freestyle relay,X,Gold
+Rio,2016,Wrestling,Wrestling Free.,"MAROULIS, Helen Louise",USA,Unknown,- 47.6kg (light-flyweight),X,Gold
+Rio,2016,Hockey,Hockey,"MASSO, Luca",ARG,Unknown,hockey,X,Gold
 Rio,2016,Rugby,Rugby,"MATA, Viliame",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Badminton,Badminton,"MATSUTOMO, Misaki",JPN,Unknown,doubles,X,Gold
 Rio,2016,Tennis,Tennis,"MATTEK,-SANDS Bethanie",USA,Unknown,mixed doubles,X,Gold
+Rio,2016,Hockey,Hockey,"MAZZILLI, Agustin",ARG,Unknown,hockey,X,Gold
 Rio,2016,Athletics,Athletics,"MCLEOD, Omar",JAM,Unknown,110m hurdles,X,Gold
 Rio,2016,Aquatics,Diving,"MEARS, Chris",GBR,Unknown,3m springboard,X,Gold
 Rio,2016,Weightlifting,Weightlifting,"MENG, Suping",CHN,Unknown,+ 75kg,X,Gold
+Rio,2016,Hockey,Hockey,"MENINI, Joaquin",ARG,Unknown,hockey,X,Gold
 Rio,2016,Athletics,Athletics,"MILLER, Shaunae",BAH,Unknown,400m,X,Gold
 Rio,2016,Sailing,Sailing,"MILLS, Hannah",GBR,Unknown,470 - Two Person Dinghy,X,Gold
 Rio,2016,Weightlifting,Weightlifting,"MORADI, Sohrab",IRI,Unknown,94kg,X,Gold
 Rio,2016,Judo,Judo,"MUDRANOV, Beslan",RUS,Unknown,- 60 kg,X,Gold
+Rio,2016,Athletics,Athletics,"MUHAMMAD, Dalilah",USA,Unknown,400m hurdles,X,Gold
 Rio,2016,Tennis,Tennis,"MURRAY, Andy",GBR,Unknown,singles,X,Gold
 Rio,2016,Rowing,Rowing,"MURRAY, Eric",NZL,Unknown,pair-oared shell with coxswain (2+),X,Gold
 Rio,2016,Rowing,Rowing,"MUSNICKI, Meghan",USA,Unknown,eight with coxswain (8+),X,Gold
@@ -340,11 +363,15 @@ Rio,2016,Badminton,Badminton,"NATSIR, Liliyana",INA,Unknown,doubles,X,Gold
 Rio,2016,Rowing,Rowing,"NIEPMANN, Simon",SUI,Unknown,lightweight coxless four (4-),X,Gold
 Rio,2016,Weightlifting,Weightlifting,"NURUDINOV, Ruslan",UZB,Unknown,+ 105kg,X,Gold
 Rio,2016,Judo,Judo,"ONO, Shohei",JPN,Unknown,66 - 73kg (lightweight),X,Gold
+Rio,2016,Hockey,Hockey,"ORTIZ, Ignacio",ARG,Unknown,hockey,X,Gold
+Rio,2016,Volleyball,Beach volley.,"OSCAR, SCHMIDT Bruno",BRA,Unknown,beach volleyball,X,Gold
 Rio,2016,Aquatics,Swimming,"PALTRINIERI, Gregorio",ITA,Unknown,1500m freestyle,X,Gold
+Rio,2016,Hockey,Hockey,"PAREDES, Matias",ARG,Unknown,hockey,X,Gold
 Rio,2016,Judo,Judo,"PARETO, Paula",ARG,Unknown,- 48kg (extra-lightweight),X,Gold
 Rio,2016,Fencing,Fencing,"PARK, Sangyoung",KOR,Unknown,épée individual,X,Gold
 Rio,2016,Rugby,Rugby,"PARRY, Shannon",AUS,Unknown,rugby,X,Gold
 Rio,2016,Rowing,Rowing,"PAULIS, Ilse",NED,Unknown,lightweight double sculls (2x),X,Gold
+Rio,2016,Hockey,Hockey,"PEILLAT, Gonzalo",ARG,Unknown,hockey,X,Gold
 Rio,2016,Rugby,Rugby,"PELITE, Evania",AUS,Unknown,rugby,X,Gold
 Rio,2016,Athletics,Athletics,"PERKOVIC, Sandra",CRO,Unknown,discus throw,X,Gold
 Rio,2016,Gymnastics,Artistic G.,"PETROUNIAS, Eleftherios",GRE,Unknown,rings,X,Gold
@@ -362,7 +389,10 @@ Rio,2016,Rugby,Rugby,"RAWACA, Savenaca",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Rowing,Rowing,"REED, Pete",GBR,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Rowing,Rowing,"REGAN, Emily",USA,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Shooting,Shooting,"REITZ, Christian",GER,Unknown,25m rapid fire pistol (60 shots),X,Gold
+Rio,2016,Aquatics,Diving,"REN, Qian",CHN,Unknown,10m platform,X,Gold
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"RENDSCHMIDT, Max",GER,Unknown,C-2 1000m (canoe double),X,Gold
+Rio,2016,Hockey,Hockey,"REY, Lucas",ARG,Unknown,hockey,X,Gold
+Rio,2016,Hockey,Hockey,"REY, Matias",ARG,Unknown,hockey,X,Gold
 Rio,2016,Gymnastics,Artistic G.,"RI, Se Gwang",PRK,Unknown,vault,X,Gold
 Rio,2016,Weightlifting,Weightlifting,"RIM, Jong Sim",PRK,Unknown,"67.5 - 75kg, one-two hand 3 events (middleweight)",X,Gold
 Rio,2016,Judo,Judo,"RINER, Teddy",FRA,Unknown,+ 100kg (heavyweight),X,Gold
@@ -370,12 +400,14 @@ Rio,2016,Athletics,Athletics,"ROLLINS, Brianna",USA,Unknown,100m hurdles,X,Gold
 Rio,2016,Aquatics,Swimming,"ROMASHINA, Svetlana",RUS,Unknown,100m freestyle,X,Gold
 Rio,2016,Golf,Golf,"ROSE, Justin",GBR,Unknown,individual,X,Gold
 Rio,2016,Shooting,Shooting,"ROSSETTI, Gabriele",ITA,Unknown,skeet (125 targets),X,Gold
+Rio,2016,Hockey,Hockey,"ROSSI, Lucas",ARG,Unknown,hockey,X,Gold
 Rio,2016,Weightlifting,Weightlifting,"ROSTAMI, Kianoush",IRI,Unknown,85kg,X,Gold
 Rio,2016,Equestrian,Dressage,"ROTHENBERGER, Sonke",GER,Unknown,team,X,Gold
 Rio,2016,Cycling,Cycling Track,"ROWSELL,-SHAND Joanna",GBR,Unknown,"1980 yards Pursuit, Team",X,Gold
 Rio,2016,Equestrian,Jumping,"ROZIER, Philippe",FRA,Unknown,team,X,Gold
 Rio,2016,Athletics,Athletics,"RUDISHA, David Lekuta",KEN,Unknown,800m,X,Gold
 Rio,2016,Aquatics,Swimming,"RUNGE, Cierra",USA,Unknown,4x200m freestyle relay,X,Gold
+Rio,2016,Hockey,Hockey,"SALADINO, Juan",ARG,Unknown,hockey,X,Gold
 Rio,2016,Rowing,Rowing,"SATCH, William",GBR,Unknown,eight with coxswain (8+),X,Gold
 Rio,2016,Rowing,Rowing,"SBIHI, Mohamed",GBR,Unknown,four-oared shell with coxswain (4-),X,Gold
 Rio,2016,Rowing,Rowing,"SCHMETTERLING, Lauren",USA,Unknown,eight with coxswain (8+),X,Gold
@@ -423,6 +455,7 @@ Rio,2016,Wrestling,Wrestling Free.,"TOSAKA, Eri",JPN,Unknown,- 48kg (light-flywe
 Rio,2016,Rowing,Rowing,"TRAMER, Lucas",SUI,Unknown,lightweight coxless four (4-),X,Gold
 Rio,2016,Judo,Judo,"TRSTENJAK, Tina",SLO,Unknown,- 63kg (lightweight),X,Gold
 Rio,2016,Rugby,Rugby,"TUISOVA, Josua",FIJ,Unknown,rugby,X,Gold
+Rio,2016,Sailing,Sailing,"TUKE, Blair",NZL,Unknown,49er - Skiff,X,Gold
 Rio,2016,Rugby,Rugby,"TURNER, Amy",AUS,Unknown,rugby,X,Gold
 Rio,2016,Rugby,Rugby,"TUWAI, Jerry",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Equestrian,Eventing,"VALLETTE, Thibaut",FRA,Unknown,team,X,Gold
@@ -432,7 +465,9 @@ Rio,2016,Sailing,Sailing,"VAN, RIJSSELBERGHE Dorian",NED,Unknown,RS:X - Windsurf
 Rio,2016,Aquatics,Swimming,"VAN, ROUWENDAAL Sharon",NED,Unknown,marathon 10km,X,Gold
 Rio,2016,Rugby,Rugby,"VEREMALUA, Jasa",FIJ,Unknown,rugby,X,Gold
 Rio,2016,Tennis,Tennis,"VESNINA, Elena",RUS,Unknown,doubles,X,Gold
+Rio,2016,Hockey,Hockey,"VILA, Lucas",ARG,Unknown,hockey,X,Gold
 Rio,2016,Rugby,Rugby,"VIRIVIRI, Samisoni",FIJ,Unknown,rugby,X,Gold
+Rio,2016,Hockey,Hockey,"VIVALDI, Juan",ARG,Unknown,hockey,X,Gold
 Rio,2016,Cycling,Cycling Track,"VIVIANI, Elia",ITA,Unknown,100km,X,Gold
 Rio,2016,Wrestling,Wrestling Gre-R,"VLASOV, Roman",RUS,Unknown,67.5 - 75kg (middleweight),X,Gold
 Rio,2016,Volleyball,Beach volley.,"WALKENHORST, Kira",GER,Unknown,beach volleyball,X,Gold
@@ -441,6 +476,7 @@ Rio,2016,Athletics,Athletics,"WANG, Zhen",CHN,Unknown,20km walk,X,Gold
 Rio,2016,Aquatics,Swimming,"WEERTMAN, Ferry",NED,Unknown,marathon 10km,X,Gold
 Rio,2016,Rowing,Rowing,"WENDE, Philipp",GER,Unknown,quadruple sculls with coxswain (4x),X,Gold
 Rio,2016,Gymnastics,Artistic G.,"WEVERS, Sanne",NED,Unknown,balance beam,X,Gold
+Rio,2016,Wrestling,Wrestling Free.,"WIEBE, Erica Elizabeth",CAN,Unknown,67.5 - 75kg (middleweight),X,Gold
 Rio,2016,Cycling,Cycling Track,"WIGGINS, Bradley",GBR,Unknown,"1980 yards Pursuit, Team",X,Gold
 Rio,2016,Rugby,Rugby,"WILLIAMS, Sharni",AUS,Unknown,rugby,X,Gold
 Rio,2016,Athletics,Athletics,"WLODARCZYK, Anita",POL,Unknown,hammer throw,X,Gold
@@ -485,6 +521,8 @@ Rio,2016,Athletics,Athletics,"BOWIE, Tori",USA,Unknown,200m,X,Bronze
 Rio,2016,Athletics,Athletics,"BOWIE, Tori",USA,Unknown,100m,X,Silver
 Rio,2016,Aquatics,Diving,"CAGNOTTO, Tania",ITA,Unknown,3m springboard,X,Bronze
 Rio,2016,Aquatics,Diving,"CAGNOTTO, Tania",ITA,Unknown,3m springboard,X,Silver
+Rio,2016,Athletics,Athletics,"DE, GRASSE Andre",CAN,Unknown,100m,X,Bronze
+Rio,2016,Athletics,Athletics,"DE, GRASSE Andre",CAN,Unknown,200m,X,Silver
 Rio,2016,Shooting,Shooting,"DU, Li",CHN,Unknown,50m rifle 3 positions (3x40 shots),X,Bronze
 Rio,2016,Shooting,Shooting,"DU, Li",CHN,Unknown,10m air rifle (40 shots),X,Silver
 Rio,2016,Archery,Archery,"ELLISON, Brady",USA,Unknown,individual FITA round,X,Bronze
@@ -532,11 +570,14 @@ Rio,2016,Rowing,Rowing,"BEUKERS, Nicole",NED,Unknown,quadruple sculls with coxsw
 Rio,2016,Rugby,Rugby,"BIBBY, Dan",GBR,Unknown,rugby,X,Silver
 Rio,2016,Equestrian,Dressage,"BIGWOOD, Fiona",GBR,Unknown,team,X,Silver
 Rio,2016,Cycling,Cycling Track,"BOBRIDGE, Jack",AUS,Unknown,"1980 yards Pursuit, Team",X,Silver
+Rio,2016,Hockey,Hockey,"BOCCARD, Gauthier",BEL,Unknown,hockey,X,Silver
 Rio,2016,Taekwondo,Taekwondo,"BOGDANOVIC, Tijana",SRB,Unknown,- 49 kg,X,Silver
+Rio,2016,Hockey,Hockey,"BOON, Tom",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rowing,Rowing,"BOOTH, Joshua",AUS,Unknown,four-oared shell with coxswain (4-),X,Silver
 Rio,2016,Aquatics,Diving,"BOUDIA, David",USA,Unknown,10m platform,X,Silver
 Rio,2016,Rowing,Rowing,"BOUW, Carline",NED,Unknown,quadruple sculls with coxswain (4x),X,Silver
 Rio,2016,Rugby,Rugby,"BRAZIER, Kelly",NZL,Unknown,rugby,X,Silver
+Rio,2016,Hockey,Hockey,"BRIELS, Thomas",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rowing,Rowing,"BRITTAIN, Lawrence",RSA,Unknown,pair-oared shell with coxswain (2+),X,Silver
 Rio,2016,Rugby,Rugby,"BROUGHTON, Gayle",NZL,Unknown,rugby,X,Silver
 Rio,2016,Athletics,Athletics,"BROWNLEE, Jonathan",GBR,Unknown,triathlon (long jump / shot put / 100 yards),X,Silver
@@ -546,15 +587,18 @@ Rio,2016,Rugby,Rugby,"BURGESS, Phil",GBR,Unknown,rugby,X,Silver
 Rio,2016,Fencing,Fencing,"CADOT, Jeremy",FRA,Unknown,foil team,X,Silver
 Rio,2016,Athletics,Athletics,"CAI, Zelin",CHN,Unknown,20km walk,X,Silver
 Rio,2016,Shooting,Shooting,"CAINERO, Chiara",ITA,Unknown,skeet (125 targets),X,Silver
+Rio,2016,Taekwondo,Taekwondo,"CALVO, GOMEZ Eva",ESP,Unknown,49 - 57 kg,X,Silver
 Rio,2016,Rowing,Rowing,"CARNEGIE,-BROWN Olivia",GBR,Unknown,eight with coxswain (8+),X,Silver
 Rio,2016,Cycling,Cycling Track,"CATLIN, Kelly",USA,Unknown,"1980 yards Pursuit, Team",X,Silver
 Rio,2016,Badminton,Badminton,"CHAN, Peng Soon",MAS,Unknown,doubles,X,Silver
+Rio,2016,Hockey,Hockey,"CHARLIER, Cedric",BEL,Unknown,hockey,X,Silver
 Rio,2016,Sailing,Sailing,"CHEN, Peina",CHN,Unknown,RS:X - Windsurfer,X,Silver
 Rio,2016,Aquatics,Diving,"CHEONG, Jun Hoong",MAS,Unknown,10m platform,X,Silver
 Rio,2016,Athletics,Athletics,"CHERUIYOT, Vivian Jepkemoi",KEN,Unknown,10miles walk (16093m),X,Silver
 Rio,2016,Weightlifting,Weightlifting,"CHOE, Hyo Sim",PRK,Unknown,63kg,X,Silver
 Rio,2016,Athletics,Athletics,"CLAYE, Will",USA,Unknown,triple jump,X,Silver
 Rio,2016,Aquatics,Swimming,"COOK, Tamsin",AUS,Unknown,4x200m freestyle relay,X,Silver
+Rio,2016,Hockey,Hockey,"COSYNS, Tanguy",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rugby,Rugby,"CROSS, Sam",GBR,Unknown,rugby,X,Silver
 Rio,2016,Aquatics,Swimming,"CSEH, Laszlo",HUN,Unknown,100m butterfly,X,Silver
 Rio,2016,Aquatics,Diving,"DALLAPE,' Francesca",ITA,Unknown,3m springboard,X,Silver
@@ -563,14 +607,19 @@ Rio,2016,Archery,Archery,"DASHIDORZHIEVA, Tuiana",RUS,Unknown,team round 60y,X,S
 Rio,2016,Rugby,Rugby,"DAVIES, James",GBR,Unknown,rugby,X,Silver
 Rio,2016,Equestrian,Jumping,"DAVIS, Lucy",USA,Unknown,team,X,Silver
 Rio,2016,Cycling,Cycling Track,"DAWKINS, Edward",NZL,Unknown,Team Sprint,X,Silver
+Rio,2016,Hockey,Hockey,"DE, PAEUW Alexandre",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rowing,Rowing,"DE, TOLEDO Zoe",GBR,Unknown,eight with coxswain (8+),X,Silver
 Rio,2016,Tennis,Tennis,"DEL, POTRO Juan Martin",ARG,Unknown,singles,X,Silver
 Rio,2016,Sailing,Sailing,"DEMPSEY, Nick",GBR,Unknown,RS:X - Windsurfer,X,Silver
 Rio,2016,Canoe / Kayak,Canoe / Kayak S,"DEMYANENKO, Valentin",AZE,Unknown,C-1 (canoe single),X,Silver
+Rio,2016,Hockey,Hockey,"DENAYER, Felix",BEL,Unknown,hockey,X,Silver
+Rio,2016,Taekwondo,Taekwondo,"DENISENKO, Alexey",RUS,Unknown,58 - 68 kg,X,Silver
 Rio,2016,Fencing,Fencing,"DI, FRANCISCA Elisa",ITA,Unknown,foil individual,X,Silver
 Rio,2016,Weightlifting,Weightlifting,"DIAZ, Hidilyn",PHI,Unknown,53kg,X,Silver
 Rio,2016,Athletics,Athletics,"DIBABA, Genzebe",ETH,Unknown,1500m,X,Silver
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"DIETZE, Tina",GER,Unknown,K-2 500m (kayak double),X,Silver
+Rio,2016,Hockey,Hockey,"DOCKIER, Sebastien",BEL,Unknown,hockey,X,Silver
+Rio,2016,Hockey,Hockey,"DOHMEN, John-John",BEL,Unknown,hockey,X,Silver
 Rio,2016,Gymnastics,Trampoline,"DONG, Dong",CHN,Unknown,individual,X,Silver
 Rio,2016,Judo,Judo,"DORJSUREN, Sumiya",MGL,Unknown,52 - 57kg (lightweight),X,Silver
 Rio,2016,Aquatics,Diving,"DORMAN, Sam",USA,Unknown,3m springboard,X,Silver
@@ -601,6 +650,7 @@ Rio,2016,Judo,Judo,"GIUFFRIDA, Odette",ITA,Unknown,48 - 52kg (half-lightweight),
 Rio,2016,Boxing,Boxing,"GIYASOV, Shakhram",UZB,Unknown,64 - 69 kg,X,Silver
 Rio,2016,Badminton,Badminton,"GOH, Liu Ying",MAS,Unknown,doubles,X,Silver
 Rio,2016,Rugby,Rugby,"GOSS, Sarah",NZL,Unknown,rugby,X,Silver
+Rio,2016,Hockey,Hockey,"GOUGNARD, Simon",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rowing,Rowing,"GRAINGER, Katherine",GBR,Unknown,double sculls (2x),X,Silver
 Rio,2016,Rowing,Rowing,"GREVES, Katie",GBR,Unknown,eight with coxswain (8+),X,Silver
 Rio,2016,Rowing,Rowing,"GRISKONIS, Mindaugas",LTU,Unknown,double sculls (2x),X,Silver
@@ -610,6 +660,7 @@ Rio,2016,Fencing,Fencing,"HAO, Jialu",CHN,Unknown,épée team,X,Silver
 Rio,2016,Judo,Judo,"HARASAWA, Hisayoshi",JPN,Unknown,+ 100kg (heavyweight),X,Silver
 Rio,2016,Aquatics,Diving,"HE, Zi",CHN,Unknown,3m springboard,X,Silver
 Rio,2016,Canoe / Kayak,Canoe / Kayak S,"HEATH, Liam",GBR,Unknown,C-2 (canoe double),X,Silver
+Rio,2016,Hockey,Hockey,"HENDRICKX, Alexander",BEL,Unknown,hockey,X,Silver
 Rio,2016,Cycling,Cycling Track,"HEPBURN, Michael",AUS,Unknown,"1980 yards Pursuit, Team",X,Silver
 Rio,2016,Equestrian,Dressage,"HESTER, Carl",GBR,Unknown,team,X,Silver
 Rio,2016,Rowing,Rowing,"HILL, Alexander",AUS,Unknown,four-oared shell with coxswain (4-),X,Silver
@@ -629,6 +680,7 @@ Rio,2016,Rowing,Rowing,"JAKSCHIK, Malte",GER,Unknown,eight with coxswain (8+),X,
 Rio,2016,Athletics,Athletics,"JAMES, Kirani",GRN,Unknown,400m,X,Silver
 Rio,2016,Rowing,Rowing,"JANSSEN, Inge",NED,Unknown,quadruple sculls with coxswain (4x),X,Silver
 Rio,2016,Rowing,Rowing,"JENNERICH, Lindsay",CAN,Unknown,lightweight double sculls (2x),X,Silver
+Rio,2016,Sailing,Sailing,"JENSEN, Iain",AUS,Unknown,49er - Skiff,X,Silver
 Rio,2016,Judo,Judo,"JEONG, Bokyeong",KOR,Unknown,- 48kg (extra-lightweight),X,Silver
 Rio,2016,Athletics,Athletics,"JEPKEMOI, Hyvin Kiyeng",KEN,Unknown,3000m steeplechase,X,Silver
 Rio,2016,Rowing,Rowing,"JOERGENSEN, Kasper",DEN,Unknown,lightweight coxless four (4-),X,Silver
@@ -652,6 +704,7 @@ Rio,2016,Athletics,Athletics,"KIRWA, Eunice Jepkirui",BRN,Unknown,marathon,X,Sil
 Rio,2016,Equestrian,Eventing,"KLIMKE, Ingrid",GER,Unknown,team,X,Silver
 Rio,2016,Wrestling,Wrestling Free.,"KOBLOVA, ZHOLOBOVA Valeriia",RUS,Unknown,54 - 58kg,X,Silver
 Rio,2016,Fencing,Fencing,"KOMASHCHUK, Alina",UKR,Unknown,sabre team,X,Silver
+Rio,2016,Athletics,Athletics,"KOVACS, Joe",USA,Unknown,shot put,X,Silver
 Rio,2016,Equestrian,Eventing,"KRAJEWSKI, Julia",GER,Unknown,team,X,Silver
 Rio,2016,Fencing,Fencing,"KRAVATSKA, Olena",UKR,Unknown,sabre team,X,Silver
 Rio,2016,Rowing,Rowing,"KUFFNER, Andreas",GER,Unknown,eight with coxswain (8+),X,Silver
@@ -667,20 +720,27 @@ Rio,2016,Rugby,Rugby,"LINDSAY,-HAGUE Oliver",GBR,Unknown,rugby,X,Silver
 Rio,2016,Judo,Judo,"LIPARTELIANI, Varlam",GEO,Unknown,81 - 90kg (middleweight),X,Silver
 Rio,2016,Rowing,Rowing,"LOCKWOOD, William",AUS,Unknown,four-oared shell with coxswain (4-),X,Silver
 Rio,2016,Wrestling,Wrestling Gre-R,"LUGO, CABRERA Yasmany Daniel",CUB,Unknown,- 66.6kg (lightweight),X,Silver
+Rio,2016,Volleyball,Beach volley.,"LUPO, Daniele",ITA,Unknown,beach volleyball,X,Silver
+Rio,2016,Hockey,Hockey,"LUYPAERT, Loick",BEL,Unknown,hockey,X,Silver
 Rio,2016,Weightlifting,Weightlifting,"LYU, Xiaojun",CHN,Unknown,77kg,X,Silver
 Rio,2016,Equestrian,Jumping,"MADDEN, Elizabeth",USA,Unknown,team,X,Silver
 Rio,2016,Wrestling,Wrestling Gre-R,"MADSEN, Mark Overgaard",DEN,Unknown,67.5 - 75kg (middleweight),X,Silver
 Rio,2016,Athletics,Athletics,"MAKHLOUFI, Taoufik",ALG,Unknown,800m,X,Silver
 Rio,2016,Athletics,Athletics,"MALACHOWSKI, Piotr",POL,Unknown,discus throw,X,Silver
+Rio,2016,Sailing,Sailing,"MALONEY, Alex",NZL,Unknown,49er - Skiff,X,Silver
+Rio,2016,Wrestling,Wrestling Free.,"MAMASHUK, Maryia",BLR,Unknown,57 - 63kg (featherweight),X,Silver
 Rio,2016,Rugby,Rugby,"MANUEL, Huriana",NZL,Unknown,rugby,X,Silver
 Rio,2016,Athletics,Athletics,"MANYONGA, Luvo",RSA,Unknown,long jump,X,Silver
+Rio,2016,Wrestling,Wrestling Free.,"MANYUROVA, Guzel",KAZ,Unknown,67.5 - 75kg (middleweight),X,Silver
 Rio,2016,Rowing,Rowing,"MARTIN, Damir",CRO,Unknown,single sculls (1x),X,Silver
 Rio,2016,Boxing,Boxing,"MARTINEZ, Yurberjen Herney",COL,Unknown,72.57 - 79.38kg (light-heavyweight),X,Silver
 Rio,2016,Weightlifting,Weightlifting,"MARTIROSYAN, Simon",ARM,Unknown,+ 105kg,X,Silver
+Rio,2016,Athletics,Athletics,"MAYER, Kevin",FRA,Unknown,decathlon,X,Silver
 Rio,2016,Rugby,Rugby,"MCALISTER, Kayla",NZL,Unknown,rugby,X,Silver
 Rio,2016,Rugby,Rugby,"MCCONNOCHIE, Ruaridh",GBR,Unknown,rugby,X,Silver
 Rio,2016,Aquatics,Swimming,"MCKEOWN, Taylor",AUS,Unknown,4x100m medley relay,X,Silver
 Rio,2016,Rowing,Rowing,"MCRAE, James",AUS,Unknown,quadruple sculls with coxswain (4x),X,Silver
+Rio,2016,Sailing,Sailing,"MEECH, Molly",NZL,Unknown,49er - Skiff,X,Silver
 Rio,2016,Gymnastics,Artistic G.,"MELNIKOVA, Angelina",RUS,Unknown,"team, horizontal bar",X,Silver
 Rio,2016,Tennis,Tennis,"MERGEA, Florin",ROU,Unknown,doubles,X,Silver
 Rio,2016,Aquatics,Swimming,"METELLA, Mehdy",FRA,Unknown,4x100m freestyle relay,X,Silver
@@ -697,7 +757,9 @@ Rio,2016,Rugby,Rugby,"NATHAN,-WONG Tyla",NZL,Unknown,rugby,X,Silver
 Rio,2016,Weightlifting,Weightlifting,"NAUMAVA, Darya",BLR,Unknown,"67.5 - 75kg, one-two hand 3 events (middleweight)",X,Silver
 Rio,2016,Aquatics,Swimming,"NEAL, Lia",USA,Unknown,4x100m freestyle relay,X,Silver
 Rio,2016,Aquatics,Swimming,"NEALE, Leah",AUS,Unknown,4x200m freestyle relay,X,Silver
+Rio,2016,Volleyball,Beach volley.,"NICOLAI, Paolo",ITA,Unknown,beach volleyball,X,Silver
 Rio,2016,Table Tennis,Table Tennis,"NIWA, Koki",JPN,Unknown,team,X,Silver
+Rio,2016,Boxing,Boxing,"NIYAZYMBETOV, Adilbek",KAZ,Unknown,75 - 81kg (light-heavyweight),X,Silver
 Rio,2016,Rugby,Rugby,"NORTON, Dan",GBR,Unknown,rugby,X,Silver
 Rio,2016,Rowing,Rowing,"OBEE, Patricia",CAN,Unknown,lightweight double sculls (2x),X,Silver
 Rio,2016,Rowing,Rowing,"OCIK, Hannes",GER,Unknown,eight with coxswain (8+),X,Silver
@@ -711,11 +773,13 @@ Rio,2016,Judo,Judo,"ORUJOV, Rustam",AZE,Unknown,66 - 73kg (lightweight),X,Silver
 Rio,2016,Cycling,Cycling Track,"O,'SHEA Glenn",AUS,Unknown,"1980 yards Pursuit, Team",X,Silver
 Rio,2016,Wrestling,Wrestling Gre-R,"OTA, Shinobu",JPN,Unknown,- 66.6kg (lightweight),X,Silver
 Rio,2016,Boxing,Boxing,"OUMIHA, Sofiane",FRA,Unknown,60 - 63.5kg (light-welterweight),X,Silver
+Rio,2016,Sailing,Sailing,"OUTTERIDGE, Nathan",AUS,Unknown,49er - Skiff,X,Silver
 Rio,2016,Gymnastics,Trampoline,"PAGE, Bryony",GBR,Unknown,individual,X,Silver
 Rio,2016,Aquatics,Diving,"PAMG, Pandelela Rinong",MAS,Unknown,10m platform,X,Silver
 Rio,2016,Badminton,Badminton,"PEDERSEN, Christinna",DEN,Unknown,doubles,X,Silver
 Rio,2016,Shooting,Shooting,"PELLIELO, Giovanni",ITA,Unknown,trap (125 targets),X,Silver
 Rio,2016,Archery,Archery,"PEROVA, Ksenia",RUS,Unknown,team round 60y,X,Silver
+Rio,2016,Athletics,Athletics,"PETERSEN, Sara Slott",DEN,Unknown,400m hurdles,X,Silver
 Rio,2016,Fencing,Fencing,"PIZZO, Paolo",ITA,Unknown,épée team,X,Silver
 Rio,2016,Sailing,Sailing,"POWRIE, Polly",NZL,Unknown,470 - Two Person Dinghy,X,Silver
 Rio,2016,Aquatics,Swimming,"PRENOT, Josh",USA,Unknown,200m breaststroke,X,Silver
@@ -744,6 +808,7 @@ Rio,2016,Aquatics,Swimming,"SEEBOHM, Emily",AUS,Unknown,4x100m medley relay,X,Si
 Rio,2016,Volleyball,Beach volley.,"SEIXAS, DE FREITAS Barbara",BRA,Unknown,beach volleyball,X,Silver
 Rio,2016,Table Tennis,Table Tennis,"SHAN, Xiaona",GER,Unknown,team,X,Silver
 Rio,2016,Cycling,Cycling Track,"SHMELEVA, Daria",RUS,Unknown,Team Sprint,X,Silver
+Rio,2016,Aquatics,Diving,"SI, Yajie",CHN,Unknown,10m platform,X,Silver
 Rio,2016,Weightlifting,Weightlifting,"SIRIKAEW, Pimsiri",THA,Unknown,58kg,X,Silver
 Rio,2016,Judo,Judo,"SMETOV, Yeldos",KAZ,Unknown,- 60 kg,X,Silver
 Rio,2016,Gymnastics,Artistic G.,"SMITH, Louis",GBR,Unknown,pommel horse,X,Silver
@@ -754,6 +819,7 @@ Rio,2016,Golf,Golf,"STENSON, Henrik",SWE,Unknown,individual,X,Silver
 Rio,2016,Archery,Archery,"STEPANOVA, Inna",RUS,Unknown,team round 60y,X,Silver
 Rio,2016,Judo,Judo,"STEVENS, Travis",USA,Unknown,73 - 81kg (half-middleweight),X,Silver
 Rio,2016,Sailing,Sailing,"STIPANOVIC, Tonci",CRO,Unknown,single-handed dinghy open (Laser),X,Silver
+Rio,2016,Hockey,Hockey,"STOCKBROEKX, Emmanuel",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rowing,Rowing,"STONE, Genevra",USA,Unknown,single sculls (1x),X,Silver
 Rio,2016,Weightlifting,Weightlifting,"STRALTSOU, Vadzim",BLR,Unknown,94kg,X,Silver
 Rio,2016,Aquatics,Swimming,"STRAVIUS, Jeremy",FRA,Unknown,4x100m freestyle relay,X,Silver
@@ -771,13 +837,19 @@ Rio,2016,Weightlifting,Weightlifting,"TIAN, Tao",CHN,Unknown,85kg,X,Silver
 Rio,2016,Aquatics,Swimming,"TIMMERS, Pieter",BEL,Unknown,100m freestyle,X,Silver
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"TOMICEVIC, Marko",SRB,Unknown,C-2 1000m (canoe double),X,Silver
 Rio,2016,Fencing,Fencing,"TONY, HELISSEY Jean-Paul",FRA,Unknown,foil team,X,Silver
+Rio,2016,Hockey,Hockey,"TRUYENS, Jerome",BEL,Unknown,hockey,X,Silver
 Rio,2016,Rugby,Rugby,"TUI, Ruby",NZL,Unknown,rugby,X,Silver
 Rio,2016,Athletics,Athletics,"TUMUTI, Boniface Mucheru",KEN,Unknown,400m hurdles,X,Silver
 Rio,2016,Gymnastics,Artistic G.,"TUTKHALIAN, Seda",RUS,Unknown,"team, horizontal bar",X,Silver
 Rio,2016,Archery,Archery,"UNRUH, Lisa",GER,Unknown,individual FITA round,X,Silver
 Rio,2016,Cycling,Cycling Track,"VALENTE, Jennifer",USA,Unknown,"1980 yards Pursuit, Team",X,Silver
 Rio,2016,Archery,Archery,"VALLADONT, Jean-Charles",FRA,Unknown,individual FITA round,X,Silver
+Rio,2016,Hockey,Hockey,"VAN, AUBEL Florent",BEL,Unknown,hockey,X,Silver
 Rio,2016,Aquatics,Swimming,"VAN, DER BURGH Cameron",RSA,Unknown,100m breaststroke,X,Silver
+Rio,2016,Hockey,Hockey,"VAN, DOREN Arthur",BEL,Unknown,hockey,X,Silver
+Rio,2016,Hockey,Hockey,"VAN, STRYDONCK Elliot",BEL,Unknown,hockey,X,Silver
+Rio,2016,Hockey,Hockey,"VANASCH, Vincent",BEL,Unknown,hockey,X,Silver
+Rio,2016,Athletics,Athletics,"VILJOEN, Sunette",RSA,Unknown,javelin throw,X,Silver
 Rio,2016,Cycling,Cycling Track,"VOINOVA, Anastasiia",RUS,Unknown,Team Sprint,X,Silver
 Rio,2016,Wrestling,Wrestling Free.,"VOROBEVA, Natalia",RUS,Unknown,63 - 69kg,X,Silver
 Rio,2016,Fencing,Fencing,"VORONINA, Olena",UKR,Unknown,sabre team,X,Silver
@@ -801,6 +873,7 @@ Rio,2016,Rugby,Rugby,"WOODMAN, Portia",NZL,Unknown,rugby,X,Silver
 Rio,2016,Shooting,Shooting,"WU, Felipe Almeida",BRA,Unknown,10m air pistol (40 shots),X,Silver
 Rio,2016,Fencing,Fencing,"XU, Anqi",CHN,Unknown,épée team,X,Silver
 Rio,2016,Aquatics,Swimming,"XU, Jiayu",CHN,Unknown,100m backstroke,X,Silver
+Rio,2016,Wrestling,Wrestling Free.,"YOSHIDA, Saori",JPN,Unknown,- 47.6kg (light-flyweight),X,Silver
 Rio,2016,Table Tennis,Table Tennis,"YOSHIMURA, Maharu",JPN,Unknown,team,X,Silver
 Rio,2016,Cycling,Cycling Road,"ZABELINSKAYA, Olga",RUS,Unknown,individual time trial,X,Silver
 Rio,2016,Gymnastics,Artistic G.,"ZANETTI, Arthur",BRA,Unknown,rings,X,Silver
@@ -809,6 +882,8 @@ Rio,2016,Shooting,Shooting,"ZHANG, Binbin",CHN,Unknown,50m rifle 3 positions (3x
 Rio,2016,Athletics,Athletics,"ZHANG, Wenxiu",CHN,Unknown,hammer throw,X,Silver
 Rio,2016,Weightlifting,Weightlifting,"ZHAPPARKUL, Zhazira",KAZ,Unknown,69kg,X,Silver
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"ZORIC, Milenko",SRB,Unknown,C-2 1000m (canoe double),X,Silver
+Rio,2016,Aquatics,Diving,"BENFEITO, Meaghan",CAN,Unknown,10m platform,X,Bronze
+Rio,2016,Aquatics,Diving,"BENFEITO, Meaghan",CAN,Unknown,10m platform,X,Bronze
 Rio,2016,Aquatics,Swimming,"DETTI, Gabriele",ITA,Unknown,1500m freestyle,X,Bronze
 Rio,2016,Aquatics,Swimming,"DETTI, Gabriele",ITA,Unknown,400m freestyle,X,Bronze
 Rio,2016,Cycling,Cycling Track,"HANSEN, Lasse Norman",DEN,Unknown,100km,X,Bronze
@@ -826,7 +901,9 @@ Rio,2016,Rugby,Rugby,"AGABA, Tim",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Judo,Judo,"AGUIAR, Mayra",BRA,Unknown,71 - 78kg (half-middleweight),X,Bronze
 Rio,2016,Equestrian,Jumping,"AHLMANN, Christian",GER,Unknown,team,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"AHMED, Sara",EGY,Unknown,69kg,X,Bronze
+Rio,2016,Boxing,Boxing,"AKHMADALIEV, Murodjon",UZB,Unknown,52.16 - 56.7kg (featherweight),X,Bronze
 Rio,2016,Fencing,Fencing,"AKSAMIT, Monica",USA,Unknown,sabre team,X,Bronze
+Rio,2016,Taekwondo,Taekwondo,"ALIZADEH, ZENOORIN Kimia",IRI,Unknown,49 - 57 kg,X,Bronze
 Rio,2016,Shooting,Shooting,"ALRASHIDI, Abdullah",IOA,Unknown,skeet (125 targets),X,Bronze
 Rio,2016,Boxing,Boxing,"ALVAREZ, Lazaro Jorge",CUB,Unknown,60 - 63.5kg (light-welterweight),X,Bronze
 Rio,2016,Wrestling,Wrestling Free.,"AMRI, Marwa",TUN,Unknown,54 - 58kg,X,Bronze
@@ -841,7 +918,6 @@ Rio,2016,Boxing,Boxing,"BAUDERLIQUE, Mathieu Albert Daniel",FRA,Unknown,75 - 81k
 Rio,2016,Cycling,Cycling Track,"BAUGE, Gregory",FRA,Unknown,Team Sprint,X,Bronze
 Rio,2016,Equestrian,Jumping,"BEERBAUM, Ludger",GER,Unknown,team,X,Bronze
 Rio,2016,Boxing,Boxing,"BELIAKOVA, Anastasiia",RUS,Unknown,57 - 60kg (lightweight),X,Bronze
-Rio,2016,Aquatics,Diving,"BENFEITO, Meaghan",CAN,Unknown,10m platform,X,Bronze
 Rio,2016,Rugby,Rugby,"BENN, Brittany",CAN,Unknown,rugby,X,Bronze
 Rio,2016,Rowing,Rowing,"BERES, Madalina",ROU,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Wrestling,Wrestling Gre-R,"BERGE, Stig-Andre",NOR,Unknown,- 66.6kg (lightweight),X,Bronze
@@ -856,10 +932,12 @@ Rio,2016,Athletics,Athletics,"BONDARENKO, Bohdan",UKR,Unknown,high jump,X,Bronze
 Rio,2016,Rowing,Rowing,"BORCH, Kjetil",NOR,Unknown,double sculls (2x),X,Bronze
 Rio,2016,Fencing,Fencing,"BOUBAKRI, Ines",TUN,Unknown,foil individual,X,Bronze
 Rio,2016,Equestrian,Dressage,"BROCK, Allison M.",USA,Unknown,team,X,Bronze
+Rio,2016,Volleyball,Beach volley.,"BROUWER, Alexander",NED,Unknown,beach volleyball,X,Bronze
 Rio,2016,Rugby,Rugby,"BROWN, Kyle",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Cycling,Cycling Track,"BROWN, Laura",CAN,Unknown,"1980 yards Pursuit, Team",X,Bronze
 Rio,2016,Rowing,Rowing,"BRUN, Kristoffer",NOR,Unknown,lightweight double sculls (2x),X,Bronze
 Rio,2016,Boxing,Boxing,"BUATSI, Joshua",GBR,Unknown,75 - 81kg (light-heavyweight),X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"BUKINA, Ekaterina",RUS,Unknown,67.5 - 75kg (middleweight),X,Bronze
 Rio,2016,Equestrian,Eventing,"BURTON, Christopher",AUS,Unknown,team,X,Bronze
 Rio,2016,Hockey,Hockey,"BUTT, Linus",GER,Unknown,hockey,X,Bronze
 Rio,2016,Athletics,Athletics,"CABALLERO, Denia",CUB,Unknown,discus throw,X,Bronze
@@ -881,7 +959,6 @@ Rio,2016,Athletics,Athletics,"COPELLO, Yasmani",TUR,Unknown,400m hurdles,X,Bronz
 Rio,2016,Aquatics,Diving,"DALEY, Thomas",GBR,Unknown,10m platform,X,Bronze
 Rio,2016,Cycling,Cycling Track,"D,'ALMEIDA Michael",FRA,Unknown,Team Sprint,X,Bronze
 Rio,2016,Rugby,Rugby,"DARLING, Hannah",CAN,Unknown,rugby,X,Bronze
-Rio,2016,Athletics,Athletics,"DE, GRASSE Andre",CAN,Unknown,100m,X,Bronze
 Rio,2016,Rugby,Rugby,"DE, JONGH Juan",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Hockey,Hockey,"DEECKE, Oskar",GER,Unknown,hockey,X,Bronze
 Rio,2016,Sailing,Sailing,"DEFRANCE, Helene",FRA,Unknown,470 - Two Person Dinghy,X,Bronze
@@ -921,6 +998,7 @@ Rio,2016,Gymnastics,Trampoline,"GAO, Lei",CHN,Unknown,individual,X,Bronze
 Rio,2016,Rugby,Rugby,"GEDULD, Justin",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Judo,Judo,"GERBI, Yarden",ISR,Unknown,- 63kg (lightweight),X,Bronze
 Rio,2016,Cycling,Cycling Track,"GLAESSER, Jasmin",CAN,Unknown,"1980 yards Pursuit, Team",X,Bronze
+Rio,2016,Taekwondo,Taekwondo,"GONZALEZ, BONILLA Joel",ESP,Unknown,58 - 68 kg,X,Bronze
 Rio,2016,Aquatics,Diving,"GOODFELLOW, Daniel",GBR,Unknown,10m platform,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"GORICHEVA, Karina",KAZ,Unknown,63kg,X,Bronze
 Rio,2016,Aquatics,Swimming,"GOSS, Kennedy",CAN,Unknown,4x200m freestyle relay,X,Bronze
@@ -934,8 +1012,10 @@ Rio,2016,Judo,Judo,"HAGA, Ryunosuke",JPN,Unknown,90 - 100kg (half-heavyweight),X
 Rio,2016,Wrestling,Wrestling Gre-R,"HAMZATAU, Javid",BLR,Unknown,76 - 85kg,X,Bronze
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"HANEDA, Takuya",JPN,Unknown,C-1 1000m (canoe single),X,Bronze
 Rio,2016,Hockey,Hockey,"HANER, Martin",GER,Unknown,hockey,X,Bronze
+Rio,2016,Sailing,Sailing,"HANSEN, Jena",DEN,Unknown,49er - Skiff,X,Bronze
 Rio,2016,Hockey,Hockey,"HAUKE, Tobias",GER,Unknown,hockey,X,Bronze
 Rio,2016,Aquatics,Diving,"HAUSDING, Patrick",GER,Unknown,3m springboard,X,Bronze
+Rio,2016,Sailing,Sailing,"HEIL, Erik",GER,Unknown,49er - Skiff,X,Bronze
 Rio,2016,Rowing,Rowing,"HENDRIKS, Kaj",NED,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Aquatics,Swimming,"HERASIMENIA, Aliaksandra",BLR,Unknown,50m freestyle,X,Bronze
 Rio,2016,Boxing,Boxing,"HERNANDEZ, Nico Miguel",USA,Unknown,72.57 - 79.38kg (light-heavyweight),X,Bronze
@@ -986,11 +1066,14 @@ Rio,2016,Tennis,Tennis,"KVITOVA, Petra",CZE,Unknown,singles,X,Bronze
 Rio,2016,Rugby,Rugby,"LANDRY, Ghislaine",CAN,Unknown,rugby,X,Bronze
 Rio,2016,Badminton,Badminton,"LANGRIDGE, Chris",GBR,Unknown,doubles,X,Bronze
 Rio,2016,Canoe / Kayak,Canoe / Kayak S,"LANKAS, Aurimas",LTU,Unknown,C-2 (canoe double),X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"LARIONOVA, Yekaterina",KAZ,Unknown,57 - 63kg (featherweight),X,Bronze
 Rio,2016,Cycling,Cycling Track,"LARSEN, Niklas",DEN,Unknown,"1980 yards Pursuit, Team",X,Bronze
 Rio,2016,Cycling,Cycling Track,"LAY, Kirsti",CAN,Unknown,"1980 yards Pursuit, Team",X,Bronze
 Rio,2016,Archery,Archery,"LE, Chien-Ying",TPE,Unknown,team round 60y,X,Bronze
 Rio,2016,Sailing,Sailing,"LE, COQ Pierre",FRA,Unknown,RS:X - Windsurfer,X,Bronze
 Rio,2016,Sailing,Sailing,"LECOINTRE, Camille",FRA,Unknown,470 - Two Person Dinghy,X,Bronze
+Rio,2016,Taekwondo,Taekwondo,"LEE, Daehoon",KOR,Unknown,58 - 68 kg,X,Bronze
+Rio,2016,Athletics,Athletics,"LEMAITRE, Christophe",FRA,Unknown,200m,X,Bronze
 Rio,2016,Rowing,Rowing,"LESZCZYNSKA, Joanna",POL,Unknown,quadruple sculls with coxswain (4x),X,Bronze
 Rio,2016,Gymnastics,Trampoline,"LI, Dan",CHN,Unknown,individual,X,Bronze
 Rio,2016,Shooting,Shooting,"LI, Yuehong",CHN,Unknown,25m rapid fire pistol (60 shots),X,Bronze
@@ -1020,13 +1103,16 @@ Rio,2016,Shooting,Shooting,"MASLENNIKOV, Vladimir",RUS,Unknown,10m air rifle (40
 Rio,2016,Aquatics,Swimming,"MASSE, Kylie",CAN,Unknown,100m backstroke,X,Bronze
 Rio,2016,Aquatics,Swimming,"MATSUDA, Takeshi",JPN,Unknown,4x200m freestyle relay,X,Bronze
 Rio,2016,Judo,Judo,"MATSUMOTO, Kaori",JPN,Unknown,52 - 57kg (lightweight),X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"MATTSSON, Sofia Magdalena",SWE,Unknown,- 47.6kg (light-flyweight),X,Bronze
 Rio,2016,Cycling,Cycling Track,"MEARES, Anna",AUS,Unknown,Keirin,X,Bronze
 Rio,2016,Sailing,Sailing,"MEECH, Sam",NZL,Unknown,single-handed dinghy open (Laser),X,Bronze
+Rio,2016,Volleyball,Beach volley.,"MEEUWSEN, Robert",NED,Unknown,beach volleyball,X,Bronze
 Rio,2016,Fencing,Fencing,"MEINHARDT, Gerek",USA,Unknown,foil team,X,Bronze
 Rio,2016,Athletics,Athletics,"MEKHISSI, Mahiedine",FRA,Unknown,3000m steeplechase,X,Bronze
 Rio,2016,Athletics,Athletics,"MERRITT, Lashawn",USA,Unknown,400m,X,Bronze
 Rio,2016,Rowing,Rowing,"MEYLINK, Boaz",NED,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Equestrian,Jumping,"MICHAELS,-BEERBAUM Meredith",GER,Unknown,team,X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"MICHALIK, Monika Ewa",POL,Unknown,57 - 63kg (featherweight),X,Bronze
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"MIKOLAJCZYK, Beata",POL,Unknown,K-2 500m (kayak double),X,Bronze
 Rio,2016,Aquatics,Swimming,"MITSUI, Risako",JPN,Unknown,100m freestyle,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"MIYAKE, Hiromi",JPN,Unknown,48kg,X,Bronze
@@ -1042,8 +1128,10 @@ Rio,2016,Judo,Judo,"NAGASE, Takanori",JPN,Unknown,73 - 81kg (half-middleweight),
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"NAJA, Karolina",POL,Unknown,K-2 500m (kayak double),X,Bronze
 Rio,2016,Judo,Judo,"NAKAMURA, Misato",JPN,Unknown,48 - 52kg (half-lightweight),X,Bronze
 Rio,2016,Aquatics,Swimming,"NIELSEN, Mie",DEN,Unknown,4x100m medley relay,X,Bronze
+Rio,2016,Boxing,Boxing,"NIKITIN, Vladimir",RUS,Unknown,52.16 - 56.7kg (featherweight),X,Bronze
 Rio,2016,Tennis,Tennis,"NISHIKORI, Kei",JPN,Unknown,singles,X,Bronze
 Rio,2016,Aquatics,Swimming,"OKIMOTO, Poliana",BRA,Unknown,marathon 10km,X,Bronze
+Rio,2016,Badminton,Badminton,"OKUHARA, Nozomi",JPN,Unknown,singles,X,Bronze
 Rio,2016,Aquatics,Swimming,"OLIVIER, Marc-Antoine",FRA,Unknown,marathon 10km,X,Bronze
 Rio,2016,Rowing,Rowing,"OPREA, Laura",ROU,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Hockey,Hockey,"ORUZ, Timur",GER,Unknown,hockey,X,Bronze
@@ -1064,6 +1152,7 @@ Rio,2016,Cycling,Cycling Track,"PERVIS, Francois",FRA,Unknown,Team Sprint,X,Bron
 Rio,2016,Equestrian,Dressage,"PETERS, Steffen",USA,Unknown,team,X,Bronze
 Rio,2016,Rowing,Rowing,"PETRILA, Mihaela",ROU,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Taekwondo,Taekwondo,"PIE, Luisito",DOM,Unknown,- 58 kg,X,Bronze
+Rio,2016,Sailing,Sailing,"PLOESSEL, Thomas",GER,Unknown,49er - Skiff,X,Bronze
 Rio,2016,Rowing,Rowing,"POPA, Iuliana",ROU,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Boxing,Boxing,"POTKONEN, Mira",FIN,Unknown,57 - 60kg (lightweight),X,Bronze
 Rio,2016,Archery,Archery,"POTTS, Alec",AUS,Unknown,team round 60y,X,Bronze
@@ -1083,6 +1172,7 @@ Rio,2016,Shooting,Shooting,"RHODE, Kimberly",USA,Unknown,skeet (125 targets),X,B
 Rio,2016,Sailing,Sailing,"RINDOM, Anne-Marie",DEN,Unknown,Laser Radial - One Person Dinghy,X,Bronze
 Rio,2016,Aquatics,Swimming,"ROBERTS, James",AUS,Unknown,4x100m freestyle relay,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"ROBLES, Sarah Elizabeth",USA,Unknown,+ 75kg,X,Bronze
+Rio,2016,Boxing,Boxing,"RODRIGUEZ, Misael Uziel",MEX,Unknown,71-75kg,X,Bronze
 Rio,2016,Rowing,Rowing,"ROELL, Boudewijn",NED,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Equestrian,Eventing,"ROSE, Shane",AUS,Unknown,team,X,Bronze
 Rio,2016,Volleyball,Beach volley.,"ROSS, April",USA,Unknown,beach volleyball,X,Bronze
@@ -1093,6 +1183,7 @@ Rio,2016,Aquatics,Swimming,"RYLOV, Evgeny",RUS,Unknown,200m backstroke,X,Bronze
 Rio,2016,Athletics,Athletics,"RYPAKOVA, Olga",KAZ,Unknown,triple jump,X,Bronze
 Rio,2016,Tennis,Tennis,"SAFAROVA, Lucie",CZE,Unknown,doubles,X,Bronze
 Rio,2016,Rugby,Rugby,"SAGE, Dylan",RSA,Unknown,rugby,X,Bronze
+Rio,2016,Sailing,Sailing,"SALSKOV,-IVERSEN Katja Steen",DEN,Unknown,49er - Skiff,X,Bronze
 Rio,2016,Judo,Judo,"SASSON, Or",ISR,Unknown,+ 100kg (heavyweight),X,Bronze
 Rio,2016,Aquatics,Swimming,"SAVARD, Katerine",CAN,Unknown,4x200m freestyle relay,X,Bronze
 Rio,2016,Boxing,Boxing,"SAVON, Erislandy",CUB,Unknown,+ 91kg (super heavyweight),X,Bronze
@@ -1102,17 +1193,20 @@ Rio,2016,Shooting,Shooting,"SCOTT, Steven",GBR,Unknown,double trap (120 targets)
 Rio,2016,Wrestling,Wrestling Gre-R,"SEMENOV, Sergey",RUS,Unknown,100 - 130kg (super heavyweight),X,Bronze
 Rio,2016,Rugby,Rugby,"SENATLA, Seabelo",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Aquatics,Swimming,"SETO, Daiya",JPN,Unknown,400m individual medley,X,Bronze
+Rio,2016,Boxing,Boxing,"SHAKHSUVARLY, Kamran",AZE,Unknown,71-75kg,X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"SHANG, Chunsong",CHN,Unknown,"team, horizontal bar",X,Bronze
 Rio,2016,Wrestling,Wrestling Gre-R,"SHARIATI, Sabah",AZE,Unknown,100 - 130kg (super heavyweight),X,Bronze
 Rio,2016,Judo,Judo,"SHAVDATUASHVILI, Lasha",GEO,Unknown,66 - 73kg (lightweight),X,Bronze
 Rio,2016,Aquatics,Swimming,"SHI, Jinglin",CHN,Unknown,200m breaststroke,X,Bronze
 Rio,2016,Badminton,Badminton,"SHIN, Seung Chan",KOR,Unknown,doubles,X,Bronze
+Rio,2016,Canoe / Kayak,Canoe / Kayak F,"SHTOKALOV, Ilia",RUS,Unknown,C-1 1000m (canoe single),X,Bronze
 Rio,2016,Fencing,Fencing,"SHUTOVA, Lyubov",RUS,Unknown,épée team,X,Bronze
 Rio,2016,Rowing,Rowing,"SIEGELAAR, Olivier",NED,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Judo,Judo,"SILVA, Rafael",BRA,Unknown,+ 100kg (heavyweight),X,Bronze
 Rio,2016,Cycling,Cycling Track,"SIMMERLING, Georgia",CAN,Unknown,"1980 yards Pursuit, Team",X,Bronze
 Rio,2016,Athletics,Athletics,"SIMPSON, Jennifer",USA,Unknown,1500m,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"SINCRAIAN, Gabriel",ROU,Unknown,85kg,X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"SINISHIN, Natalya",AZE,Unknown,- 47.6kg (light-flyweight),X,Bronze
 Rio,2016,Aquatics,Diving,"SMITH, Anabelle",AUS,Unknown,3m springboard,X,Bronze
 Rio,2016,Rugby,Rugby,"SMITH, Kwagga",RSA,Unknown,rugby,X,Bronze
 Rio,2016,Rugby,Rugby,"SNYMAN, Philip",RSA,Unknown,rugby,X,Bronze
@@ -1121,6 +1215,8 @@ Rio,2016,Rowing,Rowing,"SOLFOROSI, Franck",FRA,Unknown,lightweight coxless four 
 Rio,2016,Fencing,Fencing,"SOMFAI, Peter",HUN,Unknown,épée team,X,Bronze
 Rio,2016,Athletics,Athletics,"SPANOVIC, Ivana",SRB,Unknown,long jump,X,Bronze
 Rio,2016,Rugby,Rugby,"SPECMAN, Rosko",RSA,Unknown,rugby,X,Bronze
+Rio,2016,Athletics,Athletics,"SPENCER, Ashley",USA,Unknown,400m hurdles,X,Bronze
+Rio,2016,Athletics,Athletics,"SPOTAKOVA, Barbora",CZE,Unknown,javelin throw,X,Bronze
 Rio,2016,Rowing,Rowing,"SPRINGWALD, Maria",POL,Unknown,quadruple sculls with coxswain (4x),X,Bronze
 Rio,2016,Rugby,Rugby,"STEACY, Ashley",CAN,Unknown,rugby,X,Bronze
 Rio,2016,Table Tennis,Table Tennis,"STEGER, Bastian",GER,Unknown,team,X,Bronze
@@ -1137,7 +1233,6 @@ Rio,2016,Judo,Judo,"TAKATO, Naohisa",JPN,Unknown,- 60 kg,X,Bronze
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"TAME, Lachlan",AUS,Unknown,C-2 1000m (canoe double),X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"TAN, Jiaxin",CHN,Unknown,"team, horizontal bar",X,Bronze
 Rio,2016,Archery,Archery,"TAN, Ya-Ting",TPE,Unknown,team round 60y,X,Bronze
-Rio,2016,Canoe / Kayak,Canoe / Kayak F,"TARNOVSCHI, Serghei",MDA,Unknown,C-1 1000m (canoe single),X,Bronze
 Rio,2016,Wrestling,Wrestling Gre-R,"TASMURADOV, Elmurat",UZB,Unknown,- 66.6kg (lightweight),X,Bronze
 Rio,2016,Athletics,Athletics,"THEISEN, EATON Brianne",CAN,Unknown,heptathlon,X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"TINKLER, Amy",GBR,Unknown,floor exercises,X,Bronze
@@ -1152,6 +1247,7 @@ Rio,2016,Archery,Archery,"TYACK, Ryan",AUS,Unknown,team round 60y,X,Bronze
 Rio,2016,Rowing,Rowing,"UITTENBOGAARD, Dirk",NED,Unknown,eight with coxswain (8+),X,Bronze
 Rio,2016,Judo,Judo,"UROZBOEV, Diyorbek",UZB,Unknown,- 60 kg,X,Bronze
 Rio,2016,Rowing,Rowing,"VALCIUKAITE, Milda",LTU,Unknown,double sculls (2x),X,Bronze
+Rio,2016,Boxing,Boxing,"VALENCIA, VICTORIA Ingrit Lorena",COL,Unknown,48 - 51kg (flyweight),X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"VALENTIN, PEREZ Lidia",ESP,Unknown,"67.5 - 75kg, one-two hand 3 events (middleweight)",X,Bronze
 Rio,2016,Judo,Judo,"VAN, EMDEN Anicka",NED,Unknown,- 63kg (lightweight),X,Bronze
 Rio,2016,Aquatics,Swimming,"VAN, LANDEGHEM Chantal",CAN,Unknown,4x100m freestyle relay,X,Bronze
@@ -1162,10 +1258,13 @@ Rio,2016,Rowing,Rowing,"VERSLUIS, Mechiel",NED,Unknown,eight with coxswain (8+),
 Rio,2016,Rowing,Rowing,"VICINO, Giuseppe",ITA,Unknown,four-oared shell with coxswain (4-),X,Bronze
 Rio,2016,Rowing,Rowing,"VISTARTAITE, Donata",LTU,Unknown,double sculls (2x),X,Bronze
 Rio,2016,Cycling,Cycling Track,"VON, FOLSACH Casper",DEN,Unknown,"1980 yards Pursuit, Team",X,Bronze
+Rio,2016,Taekwondo,Taekwondo,"WAHBA, Hedaya",EGY,Unknown,49 - 57 kg,X,Bronze
 Rio,2016,Canoe / Kayak,Canoe / Kayak F,"WALLACE, Ken",AUS,Unknown,C-2 1000m (canoe double),X,Bronze
 Rio,2016,Volleyball,Beach volley.,"WALSH, JENNINGS Kerri",USA,Unknown,beach volleyball,X,Bronze
+Rio,2016,Athletics,Athletics,"WALSH, Tomas",NZL,Unknown,shot put,X,Bronze
 Rio,2016,Aquatics,Swimming,"WANG, Shun",CHN,Unknown,200m individual medley,X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"WANG, Yan",CHN,Unknown,"team, horizontal bar",X,Bronze
+Rio,2016,Athletics,Athletics,"WARNER, Damian",CAN,Unknown,decathlon,X,Bronze
 Rio,2016,Rugby,Rugby,"WATCHAM,-ROY Natasha",CAN,Unknown,rugby,X,Bronze
 Rio,2016,Hockey,Hockey,"WELLEN, Niklas",GER,Unknown,hockey,X,Bronze
 Rio,2016,Cycling,Cycling Track,"WELTE, Miriam",GER,Unknown,Team Sprint,X,Bronze
@@ -1188,6 +1287,7 @@ Rio,2016,Fencing,Fencing,"ZAGUNIS, Mariel",USA,Unknown,sabre team,X,Bronze
 Rio,2016,Weightlifting,Weightlifting,"ZAICHIKOV, Alexandr",KAZ,Unknown,+ 105kg,X,Bronze
 Rio,2016,Sailing,Sailing,"ZAJAC, Thomas",AUT,Unknown,0.5-1t,X,Bronze
 Rio,2016,Gymnastics,Artistic G.,"ZHANG, Chenglong",CHN,Unknown,"team, horizontal bar",X,Bronze
+Rio,2016,Wrestling,Wrestling Free.,"ZHANG, Fengliu",CHN,Unknown,67.5 - 75kg (middleweight),X,Bronze
 Rio,2016,Badminton,Badminton,"ZHANG, Nan",CHN,Unknown,doubles,X,Bronze
 Rio,2016,Badminton,Badminton,"ZHAO, Yunlei",CHN,Unknown,doubles,X,Bronze
 Rio,2016,Hockey,Hockey,"ZWICKER, Martin",GER,Unknown,hockey,X,Bronze
