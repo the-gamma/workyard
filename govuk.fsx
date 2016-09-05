@@ -11,7 +11,7 @@ type List = JsonProvider<"""{"help": "url","success": true,"result": ["foo","bar
 type Data = JsonProvider<"https://data.gov.uk/api/3/action/package_show?id=mot-active-vts">
 
 let pkgNames = List.Load("https://data.gov.uk/api/3/action/package_list")
-for pkg in pkgNames.Result do
+//for pkg in pkgNames.Result do
 
 let pkgs = 
   pkgNames.Result 
