@@ -5,3 +5,5 @@ rio2016/
 packages/
 smlouvy/
 snippets/config.fs
+worldbank/config.fs
+worldbank/data
