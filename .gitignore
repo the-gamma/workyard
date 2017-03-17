@@ -1,6 +1,8 @@
 .paket/paket.exe
 bbc/
 data/
+traffic/
+defra/
 rio2016/
 packages/
 smlouvy/
