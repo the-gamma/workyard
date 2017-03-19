@@ -4,8 +4,6 @@ open System
 open System.Globalization
 open FSharp.Data
 
-type Year = XmlProvider<"https://uk-air.defra.gov.uk/data/atom-dls/auto/2017/atom.en.xml">
-
 let removePrefix prefix (s:string) = 
   if s.StartsWith(prefix) then s.Substring(prefix.Length) else s
 let removeAfter substr (s:string) = 
@@ -15,13 +13,21 @@ let removeBefore substr (s:string) =
   let i = s.IndexOf(substr:string)
   if i > 0 then s.Substring(i+substr.Length) else s
 
-let y = 2017
-let year = Year.Load(sprintf "https://uk-air.defra.gov.uk/data/atom-dls/auto/%d/atom.en.xml" y)
+type Pollutants = CsvProvider<"http://dd.eionet.europa.eu/vocabulary/aq/pollutant/csv">
 
 let getPollutantsId (url:string) = 
   if url.StartsWith("http://dd.eionet.europa.eu/vocabulary/aq/pollutant/") then
     url.Substring("http://dd.eionet.europa.eu/vocabulary/aq/pollutant/".Length) |> int
   else failwithf "Invalid pollutant: %s" url
+
+let pollutantsCsv = Pollutants.GetSample()
+let pollutants = 
+  [ for row in pollutantsCsv.Rows -> 
+      getPollutantsId row.URI ]
+
+type Year = XmlProvider<"https://uk-air.defra.gov.uk/data/atom-dls/auto/2017/atom.en.xml">
+let y = 2017
+let year = Year.Load(sprintf "https://uk-air.defra.gov.uk/data/atom-dls/auto/%d/atom.en.xml" y)
 
 let pollutants = 
   [ for entry in year.Entries do
