@@ -9,3 +9,4 @@ smlouvy/
 snippets/config.fs
 worldbank/config.fs
 worldbank/data
+*.bak

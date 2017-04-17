@@ -699,7 +699,7 @@ let nicerName (s:string) =
   | last::firsts -> (String.concat " " (firsts @ [last.[0].ToString().ToUpper() + last.[1 ..].ToLower()])).Trim()
   | _ -> failwithf "Wrong name: %s" s
 
-let nrows = 
+let nrows findcountry = 
   [| for r in merged.Rows ->
       let gold = if r.Medal = "Gold" then "1" else "0"
       let silver = if r.Medal = "Silver" then "1" else "0"
@@ -708,7 +708,19 @@ let nrows =
       CsvRow(expanded, [|sprintf "%s (%d)" r.City r.Edition; string r.Edition; r.Sport; 
         r.Discipline.Replace("G.", "Gymnastics").Replace("volley", "volleyball").Replace("Gre-R","Greco-Romano")
           .Replace("Pentath", "Pentathlon").Replace("Free.", "Freestyle").Replace("S.", "Swimming"); 
-        nicerName r.Athlete; r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
+        nicerName r.Athlete; findcountry r.NOC; r.Gender; r.Event + gender; r.Medal; gold; silver; bronze |]) |]
 
 System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
-expanded.Append(nrows).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
+expanded.Append(nrows id).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-expanded.csv")
+
+let countries = 
+  [ yield "KOS", "Kosovo"
+    yield "SRB", "Serbia"
+    yield "TTO", "Trinidad and Tobago"
+    for r in Codes.GetSample().Tables.``3-Digit Country Codes``.Rows do 
+      if r.Code = "GBR" then yield r.Code, "United Kingdom"
+      else yield r.Code, r.Country.TrimEnd('*') ] |> dict
+
+let renamed = CsvFile.Parse("Games,Year,Sport,Discipline,Athlete,Team,Gender,Event,Medal,Gold,Silver,Bronze")
+System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/guardian/medals-renamed.csv")
+renamed.Append(nrows countries.get_Item).Save(__SOURCE_DIRECTORY__ + "/guardian/medals-renamed.csv")
