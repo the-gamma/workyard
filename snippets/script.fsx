@@ -10,7 +10,7 @@ open Microsoft.WindowsAzure.Storage
 open Newtonsoft.Json
 
 // --------------------------------------------------------------------------------------
-// Data we store about snippets
+// Data we store about snippets and CSV files
 // --------------------------------------------------------------------------------------
 
 type Snippet = 
@@ -27,12 +27,22 @@ type Snippet =
     hidden : bool 
     version : string }
 
+type CsvFile = 
+  { id : string 
+    hidden : bool 
+    date : DateTime
+    source : string
+    title : string
+    description : string
+    tags : string[] 
+    passcode : string }
+
 // --------------------------------------------------------------------------------------
 // Reading & writing blobs in Azure storage
 // --------------------------------------------------------------------------------------
 
-let createCloudBlobClient() = 
-  let account = CloudStorageAccount.Parse(Config.TheGammaSnippetsStorage)
+let createCloudBlobClient ca = 
+  let account = CloudStorageAccount.Parse(ca)
   account.CreateCloudBlobClient()
 
 let serializer = JsonSerializer.Create()
@@ -48,7 +58,7 @@ let fromJson<'R> str : 'R =
   serializer.Deserialize(tr, typeof<'R>) :?> 'R
 
 let readSnippets source =
-  let container = createCloudBlobClient().GetContainerReference(source)
+  let container = createCloudBlobClient(Config.TheGammaSnippetsStorage).GetContainerReference(source)
   if container.Exists() then
     let blob = container.GetBlockBlobReference("snippets.json")
     if blob.Exists() then 
@@ -58,22 +68,46 @@ let readSnippets source =
   else failwithf "container '%s' not found" source
 
 let writeSnippets source (json:string) = 
-  let container = createCloudBlobClient().GetContainerReference(source)
+  let container = createCloudBlobClient(Config.TheGammaSnippetsStorage).GetContainerReference(source)
   if container.Exists() then
     let blob = container.GetBlockBlobReference("snippets.json")
     blob.UploadText(json, System.Text.Encoding.UTF8)
   else failwithf "container '%s' not found" source
 
 let initSnippets source = 
-  let container = createCloudBlobClient().GetContainerReference(source)
+  let container = createCloudBlobClient(Config.TheGammaSnippetsStorage).GetContainerReference(source)
   container.CreateIfNotExists() |> ignore
   let blob = container.GetBlockBlobReference("snippets.json")
   blob.UploadText("[]", System.Text.Encoding.UTF8)
   
+let readCsvFiles () =
+  let container = createCloudBlobClient(Config.TheGammaGalleryCsvStorage).GetContainerReference("uploads")
+  if container.Exists() then
+    let blob = container.GetBlockBlobReference("files.json")
+    if blob.Exists() then 
+      blob.DownloadText(System.Text.Encoding.UTF8) |> fromJson<CsvFile[]> 
+    else failwith "Blob 'files.json' does not exist."
+  else failwith "Container 'uploads' not found" 
+
+let writeCsvFiles (files:CsvFile[]) = 
+  let json = files |> toJson
+  let container = createCloudBlobClient(Config.TheGammaGalleryCsvStorage).GetContainerReference("uploads")
+  if container.Exists() then
+    let blob = container.GetBlockBlobReference("files.json")
+    blob.UploadText(json, System.Text.Encoding.UTF8)
+  else failwith "container 'uploads' not found" 
 
 // --------------------------------------------------------------------------------------
-// Keeping current snippets using an agent
+// Ad hoc scripts to fix broken things
 // --------------------------------------------------------------------------------------
+
+do
+  let csv = readCsvFiles ()
+  for file in csv do
+    printfn "[%s]: %s"  file.id (if file.hidden then "<hidden>" else file.title)
+
+  let csv = csv |> Array.map (fun cs -> { cs with hidden = not (cs.title.Contains "2016")})
+  writeCsvFiles csv
 
 do 
   let _, snips = readSnippets "olympics"
@@ -92,6 +126,15 @@ do
 do
   let _, snips = readSnippets "thegamma"
   let json = snips |> Seq.map (fun s -> { s with twitter = s.twitter.TrimStart('@') }) |> Array.ofSeq |> toJson
+  writeSnippets "thegamma" json
+
+do
+  let _, snips = readSnippets "thegamma"
+  for snip in snips |> Seq.sortBy (fun s -> s.id) do
+    printfn "*** %s (%d) by %s ***" snip.title snip.id snip.author
+    printfn "%s\n" snip.config
+
+  let json = snips |> Seq.filter (fun s -> s.id < 31) |> Array.ofSeq |> toJson
   writeSnippets "thegamma" json
 
 do
