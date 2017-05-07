@@ -23,40 +23,99 @@ Prof Bin Yu,The Alan Turing Institute,Leadership,Scientific Advisory Board
 Mark Briers,The Alan Turing Institute,Leadership,Strategic Programme Directors
 Professor Mark Girolami FRSE,The Alan Turing Institute,Leadership,Strategic Programme Directors
 Anthony Lee,The Alan Turing Institute,Leadership,Strategic Programme Directors
+Professor Jon Crowcroft,Cambridge,Faculty Fellow,Faculty Fellow
+Dr Leonardo Bottolo,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Quentin Berthet,Cambridge,Faculty Fellow,Faculty Fellow
+Professor Cecilia Mascolo,Cambridge,Faculty Fellow,Faculty Fellow
+Professor Carl Rasmussen,Cambridge,Faculty Fellow,Faculty Fellow
+Professor Richard Samworth,Cambridge,Faculty Fellow,Faculty Fellow
+Dr Rajen Dinesh Shah,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Sumeetpal Singh,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Richard Gibbens,Cambridge,Faculty Fellow,Faculty Fellow
+Professor Peter Markowich,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Adrian Weller,Cambridge,Faculty Fellow,Faculty Fellow
+Professor Carola-Bibiane Schönlieb,Cambridge,Faculty Fellow,Faculty Fellow
+Dr Kenneth Heafield,Edinburgh,Faculty Fellow,Faculty Fellow
+"Professor Chris Williams (ULD, Edinburgh)",Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Aretha Teckentrup,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr. Kostas Zygalakis,Edinburgh,Faculty Fellow,Faculty Fellow
 Professor Peter Boyle,Edinburgh,Faculty Fellow,Faculty Fellow
+Professor Ruth King,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Nick Polydorides,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Beatrice Alex,Edinburgh,Faculty Fellow,Faculty Fellow
+Professor David Aspinall,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Natalia Bochkina,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Gian Marco Campagnolo,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Claire Grover,Edinburgh,Faculty Fellow,Faculty Fellow
+Professor Anthony Kennedy,Edinburgh,Faculty Fellow,Faculty Fellow
+Professor Ben Leimkuhler,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Ioannis Papastathopoulos,Edinburgh,Faculty Fellow,Faculty Fellow
 Dr Peter Richtarik,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Lukasz Szpruch,Edinburgh,Faculty Fellow,Faculty Fellow
 Dr Charles Sutton,Edinburgh,Faculty Fellow,Faculty Fellow
+Dr Maria Wolters,Edinburgh,Faculty Fellow,Faculty Fellow
+"Professor Jared Tanner (ULD, Oxford)",Oxford,Faculty Fellow,Faculty Fellow
+Professor Stephen Roberts,Oxford,Faculty Fellow,Faculty Fellow
 Professor Mihaela van der Schaar,Oxford,Faculty Fellow,Faculty Fellow
 Professor Alessandro Abate,Oxford,Faculty Fellow,Faculty Fellow
 Professor Pawan Kumar,Oxford,Faculty Fellow,Faculty Fellow
 Dr Joss Wright,Oxford,Faculty Fellow,Faculty Fellow
 Professor Varun Kanade,Oxford,Faculty Fellow,Faculty Fellow
+Professor Gesine Reinert,Oxford,Faculty Fellow,Faculty Fellow
 Professor Yee Whye Teh,Oxford,Faculty Fellow,Faculty Fellow
+Professor Coralia Cartis,Oxford,Faculty Fellow,Faculty Fellow
+Professor Raphael Hauser,Oxford,Faculty Fellow,Faculty Fellow
 Professor Francois Caron,Oxford,Faculty Fellow,Faculty Fellow
 Professor Dino Sejdinovic,Oxford,Faculty Fellow,Faculty Fellow
+Professor Thomas Lukasiewicz,Oxford,Faculty Fellow,Faculty Fellow
 Professor Arnaud Doucet,Oxford,Faculty Fellow,Faculty Fellow
 Professor Chris Holmes,Oxford,Faculty Fellow,Faculty Fellow
+Professor Terry Lyons,Oxford,Faculty Fellow,Faculty Fellow
+Professor Ulrike Tillmann,Oxford,Faculty Fellow,Faculty Fellow
 Dr Scott Hale,Oxford,Faculty Fellow,Faculty Fellow
 Professor Frank Wood,Oxford,Faculty Fellow,Faculty Fellow
+Professor Ian Horrocks,Oxford,Faculty Fellow,Faculty Fellow
+Professor Dan Olteanu,Oxford,Faculty Fellow,Faculty Fellow
 Professor Shimon Whiteson,Oxford,Faculty Fellow,Faculty Fellow
+Dr Bernie Hogan,Oxford,Faculty Fellow,Faculty Fellow
 Dr Sarah Filippi,Oxford,Faculty Fellow,Faculty Fellow
 Dr Taha Yasseri,Oxford,Faculty Fellow,Faculty Fellow
+Professor Mark Graham,Oxford,Faculty Fellow,Faculty Fellow
+Professor Vili Lehdonvirta,Oxford,Faculty Fellow,Faculty Fellow
+Professor Helen Margetts,Oxford,Faculty Fellow,Faculty Fellow
+Professor Eric Meyer,Oxford,Faculty Fellow,Faculty Fellow
+Professor Luciano Floridi,Oxford,Faculty Fellow,Faculty Fellow
+Dr Mariarosaria Taddeo,Oxford,Faculty Fellow,Faculty Fellow
+Professor Charlotte Deane,Oxford,Faculty Fellow,Faculty Fellow
+"Professor David Pym (ULD, UCL)",UCL,Faculty Fellow,Faculty Fellow
 Dr Emine Yilmaz,UCL,Faculty Fellow,Faculty Fellow
 Dr Ricardo Silva,UCL,Faculty Fellow,Faculty Fellow
+Dr Mirco Musolesi,UCL,Faculty Fellow,Faculty Fellow
 Dr David Barber,UCL,Faculty Fellow,Faculty Fellow
+Professor Brad Love,UCL,Faculty Fellow,Faculty Fellow
 Dr Ioanna Manolopoulou,UCL,Faculty Fellow,Faculty Fellow
 Dr Franz Kiraly,UCL,Faculty Fellow,Faculty Fellow
+Dr Ioannis Kosmidis,UCL,Faculty Fellow,Faculty Fellow
+Professor Petros Dellaportas,UCL,Faculty Fellow,Faculty Fellow
+Professor David Pym,UCL,Faculty Fellow,Faculty Fellow
 Dr Hao Ni,UCL,Faculty Fellow,Faculty Fellow
+Dr George Danezis,UCL,Faculty Fellow,Faculty Fellow
+Dr Weisi Guo,Warwick,Faculty Fellow,Faculty Fellow
+"Professor Graham Cormode (ULD, Warwick)",Warwick,Faculty Fellow,Faculty Fellow
 Professor Mark Girolami,Warwick,Faculty Fellow,Faculty Fellow
 Professor Rob Procter,Warwick,Faculty Fellow,Faculty Fellow
+Professor Tom Nichols,Warwick,Faculty Fellow,Faculty Fellow
+Professor Saul Jacka,Warwick,Faculty Fellow,Faculty Fellow
+Professor David Firth,Warwick,Faculty Fellow,Faculty Fellow
+Dr Anthony Lee,Warwick,Faculty Fellow,Faculty Fellow
 Professor Chenlei Leng,Warwick,Faculty Fellow,Faculty Fellow
+Dr Filip Rindler,Warwick,Faculty Fellow,Faculty Fellow
 Professor Jim Smith,Warwick,Faculty Fellow,Faculty Fellow
+Dr Krys Latuszynski,Warwick,Faculty Fellow,Faculty Fellow
 Dr Maria Liakata,Warwick,Faculty Fellow,Faculty Fellow
+Dr Suzy Moat,Warwick,Faculty Fellow,Faculty Fellow
 Dr Theo Damoulas,Warwick,Faculty Fellow,Faculty Fellow
+Dr Tobias Preis,Warwick,Faculty Fellow,Faculty Fellow
 Dr Matthew Leeke,Warwick,Faculty Fellow,Faculty Fellow
 Dr Sebastian Vollmer,Warwick,Faculty Fellow,Faculty Fellow
 Joshua Loftus,Cambridge,Research Fellow,Research Fellow
@@ -71,9 +130,11 @@ Vidit Nanda,Oxford,Research Fellow,Research Fellow
 Matt Kusner,Warwick,Research Fellow,Research Fellow
 Nathanaël Fijalkow,Warwick,Research Fellow,Research Fellow
 Catalina Vallejos,UCL,Research Fellow,Research Fellow
-Tomas Petricek ,Cambridge,Research Fellow,Visiting Researcher
-Yarin Gal ,Cambridge,Research Fellow,Visiting Researcher
+Tomas Petricek,Cambridge,Research Fellow,Visiting Researcher
+Yarin Gal,Cambridge,Research Fellow,Visiting Researcher
 Barbara McGillivray,Cambridge,Research Fellow,Research Fellow
+Adria Gascon,Warwick,Research Fellow,Research Fellow
+Stephen Law,UCL,Research Fellow,Research Fellow
 Kirstie Whitaker,Cambridge,Research Fellow,Research Fellow
 Brent Mittelstadt,UCL,Research Fellow,Research Fellow
 Adilet Otemissov,Oxford,Doctoral Student,Doctoral Student
@@ -84,6 +145,7 @@ Daniel Wilson-Nunn,Warwick,Doctoral Student,Doctoral Student
 David Butler,Edinburgh,Doctoral Student,Doctoral Student
 Edward Chuah,Warwick,Doctoral Student,Doctoral Student
 Helen Oliver,Cambridge,Doctoral Student,Doctoral Student
+Javad Hosseini,Edinburgh,Doctoral Student,Doctoral Student
 Hilmi Majid,Warwick,Doctoral Student,Doctoral Student
 Nicole Peinelt,Warwick,Doctoral Student,Doctoral Student
 Odysseas Sclavounis,Oxford,Doctoral Student,Doctoral Student
@@ -92,17 +154,22 @@ Daniel Duma,Edinburgh,Doctoral Student,Doctoral Student
 Chanuki Seresinhe,Warwick,Doctoral Student,Doctoral Student
 Bingyu Zhao,Cambridge,Doctoral Student,Doctoral Student
 Pankaj Pansari,Oxford,Doctoral Student,Doctoral Student
+Nina Otter,Oxford,Doctoral Student,Doctoral Student
 Merve Alanyali,Warwick,Doctoral Student,Doctoral Student
 Marina Riabiz,Cambridge,Doctoral Student,Doctoral Student
 Luca Melis,UCL,Doctoral Student,Doctoral Student
 Joe Shaw,Oxford,Doctoral Student,Doctoral Student
 Jeremy Reizenstein,Warwick,Doctoral Student,Doctoral Student
 James Pitkin,UCL,Doctoral Student,Doctoral Student
+Hasiba Afzalzada,UCL,Doctoral Student,Doctoral Student
 Elena Kochkina,Warwick,Doctoral Student,Doctoral Student
 Sebastian Bobadilla-Suarez,UCL,Doctoral Student,Doctoral Student
 Rodrigo Mendoza-Smith,Oxford,Doctoral Student,Doctoral Student
 Valerio Giuffrida,Edinburgh,Doctoral Student,Doctoral Student
+Yiwei Zhou,Warwick,Doctoral Student,Doctoral Student
+Thibaut Lienart,Oxford,Doctoral Student,Doctoral Student
 Abhinav Mehrotra,UCL,Doctoral Student,Doctoral Student
 Adam Tsakalidis,Warwick,Doctoral Student,Doctoral Student
 Alkeos Tsokos,UCL,Doctoral Student,Doctoral Student
 Aristeidis Panos,UCL,Doctoral Student,Doctoral Student
+Tejas Kulkarni,Warwick,Doctoral Student,Doctoral Student

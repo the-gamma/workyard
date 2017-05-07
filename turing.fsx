@@ -183,6 +183,8 @@ let downloadNodes (url:string) =
   | HtmlDocument(_, results::_) -> results
   | _ -> failwith "Invalid document"
 
+let unionAll ps = Seq.reduce (fun a b -> unionPaths a b |> Option.get) ps
+
 // --------------------------------------------------------------------------------------
 // Get all Turing people
 // --------------------------------------------------------------------------------------
@@ -214,7 +216,8 @@ let fellows = downloadNodes "https://www.turing.ac.uk/faculty-fellows/"
 
 let f1 = fellows |> firstTextPath "professor frank wood" |> Seq.head
 let f2 = fellows |> firstTextPath "dr sebastian vollmer" |> Seq.head
-let fpath, fname = unionPaths f1 f2 |> Option.get |> splitLast 4
+let f3 = fellows |> firstTextPath "professor jon crowcroft" |> Seq.head
+let fpath, fname = unionAll [f1; f2; f3] |> splitLast 4
 let funi, _ = fname |> splitLast 2
 
 let ffs = 
@@ -223,23 +226,29 @@ let ffs =
       let uni = (matchPath funi f).innerText().Substring(name.Length)
       name, uni, "Faculty Fellow", "Faculty Fellow" ]
   
+ffs |> Seq.length
+ffs |> Seq.iter (printfn "%A")
 
 // Research fellows
 let research = downloadNodes "https://www.turing.ac.uk/research-fellows/"
 
 let r1 = research |> firstTextPath "mihai cucuringu" |> Seq.head
-let r2 = research |> firstTextPath "dong nguyen" |> Seq.head
-let rpath, rname = unionPaths r1 r2 |> Option.get |> splitLast 4
+let r2 = research |> firstTextPath "stephen law" |> Seq.head
+let r3 = research |> firstTextPath "adria gascon" |> Seq.head
+let rpath, rname = unionAll [r1; r2; r3] |> splitLast 4
 let runi, _ = rname |> splitLast 2
 
 let rfs = 
   [ for r in matchPath rpath research ->
       let name = (matchPath rname r).text()
       let uni = (matchPath runi r).innerText().Substring(name.Length)
-      if name.EndsWith("(Visiting Researcher)") then 
-        name.Substring(0, name.Length - "(Visiting Researcher)".Length), uni, "Research Fellow", "Visiting Researcher"
+      if name.EndsWith(" (Visiting Researcher)") then 
+        name.Substring(0, name.Length - " (Visiting Researcher)".Length), uni, "Research Fellow", "Visiting Researcher"
       else 
         name, uni, "Research Fellow", "Research Fellow" ]
+
+rfs |> Seq.length
+rfs |> Seq.iter (printfn "%A")
 
 
 // Phd students
@@ -247,7 +256,8 @@ let phds = downloadNodes "https://www.turing.ac.uk/doctoral-students/"
 
 let p1 = phds |> firstTextPath "merve alanyali" |> Seq.head
 let p2 = phds |> firstTextPath "luca melis" |> Seq.head
-let ppath, pname = unionPaths p1 p2 |> Option.get |> splitLast 4
+let p3 = phds |> firstTextPath "hasiba afzalzada" |> Seq.head
+let ppath, pname = unionAll [p1; p2; p3] |> splitLast 4
 let puni, _ = pname |> splitLast 2
 
 let dss = 
@@ -256,6 +266,8 @@ let dss =
       let uni = (matchPath puni p).innerText().Substring(name.Length)
       name, uni, "Doctoral Student", "Doctoral Student" ]
 
+dss |> Seq.length
+dss |> Seq.iter (printfn "%A")
 
 #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
 open FSharp.Data
