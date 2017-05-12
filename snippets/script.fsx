@@ -89,6 +89,15 @@ let readCsvFiles () =
     else failwith "Blob 'files.json' does not exist."
   else failwith "Container 'uploads' not found" 
 
+let readCsvFile (id) =
+  let container = createCloudBlobClient(Config.TheGammaGalleryCsvStorage).GetContainerReference("uploads")
+  if container.Exists() then
+    let blob = container.GetBlockBlobReference(id)
+    if blob.Exists() then 
+      blob.DownloadText(System.Text.Encoding.UTF8) 
+    else failwith "Blob 'files.json' does not exist."
+  else failwith "Container 'uploads' not found" 
+
 let writeCsvFiles (files:CsvFile[]) = 
   let json = files |> toJson
   let container = createCloudBlobClient(Config.TheGammaGalleryCsvStorage).GetContainerReference("uploads")
