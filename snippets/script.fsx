@@ -139,6 +139,12 @@ do
 
 do
   let _, snips = readSnippets "thegamma"
+  for snip in snips do printfn " - %s (%s)" snip.title snip.version
+  let json = snips |> Seq.map (fun s -> if s.version = "" then { s with version = "0.0.18" } else s) |> Array.ofSeq |> toJson
+  writeSnippets "thegamma" json
+
+do
+  let _, snips = readSnippets "thegamma"
   for snip in snips |> Seq.sortBy (fun s -> s.id) do
     printfn "*** %s (%d) by %s ***" snip.title snip.id snip.author
     printfn "%s\n" snip.config
