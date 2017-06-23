@@ -112,10 +112,27 @@ let writeCsvFiles (files:CsvFile[]) =
 
 do
   let csv = readCsvFiles ()
-  for file in csv do
+  for file in Seq.rev csv do
     printfn "[%s]: %s"  file.id (if file.hidden then "<hidden>" else file.title)
+    if file.id.Contains("2017-05") then
+      printfn "checking...."
+      if (readCsvFile file.id).Contains "Outturn" then
+        printfn "  !!!!%s" file.id
 
-  let csv = csv |> Array.map (fun cs -> { cs with hidden = not (cs.title.Contains "2016")})
+  let csv = csv |> Array.map (fun cs -> 
+    let title = 
+      if cs.id = "2017-06-17/file_0.csv" then "Olympic medalists"
+      elif cs.id = "2017-05-30/file_1.csv" then "COFOG Structure"
+      elif cs.id = "2017-04-21/file_34.csv" then "People at the Turing in 2016/2017"
+      elif cs.id = "2017-05-06/file_0.csv" then "The Alan Turing Institute People (May 2017)"
+      elif cs.id = "2017-05-07/file_0.csv" then "The Alan Turing Institute People (May 2017, corrected)"
+      elif cs.id = "2017-05-07/file_1.csv" then "The Alan Turing Institute People (7 May 2017)"
+      elif cs.id = "2017-05-11/file_2.csv" then "Rio 2016 Olympics"
+      elif cs.id = "2017-05-29/file_1.csv" then "YouTube views by video"
+      elif cs.id = "2017-05-29/file_3.csv" then "YouTube Views per Date"
+      elif cs.id = "2017-05-11/file_10.csv" then "Central government own expenditure in budgets by departmental group (PESA 2016)"
+      else ""
+    { cs with date = DateTime.Parse(cs.id.Split('/').[0]); description = ""; tags = [||]; title = title; hidden = title = ""; passcode = "" })
   writeCsvFiles csv
 
 do 
@@ -131,6 +148,14 @@ do
 
   let json = snips |> toJson
   writeSnippets "olympics" json
+
+do
+  let _, snips = readSnippets "thegamma"
+  for s in snips do 
+    let i = s.code.IndexOf("shared.")
+    if i > -1 then 
+      let j = s.code.IndexOf('\n', i)
+      printfn "[%d] %s" s.id (s.code.Substring(i, j-i-1))
 
 do
   let _, snips = readSnippets "thegamma"
