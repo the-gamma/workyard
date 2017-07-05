@@ -280,3 +280,26 @@ let rows =
 
 System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/turing/people.csv")
 people.Append(rows).Save(__SOURCE_DIRECTORY__ + "/turing/people.csv")
+
+
+// --------------------------------------------------------------------------------------
+// Get all Turing people
+// --------------------------------------------------------------------------------------
+
+// Publications
+let pubs = downloadNodes "https://www.turing.ac.uk/publications/"
+
+let b1 = pubs |> firstTextPath "facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue" |> Seq.head
+let b2 = pubs |> firstTextPath "what is data ethics?" |> Seq.head
+let bpath, bname = unionAll [b1; b2] |> splitLast 3
+let brest, _ = bname |> splitLast 2
+
+let pubscsv = CsvFile.Parse("Name,Details")
+let prows = 
+  [ for p in matchPath bpath pubs ->
+      let name = (matchPath bname p).text()
+      let rest = (matchPath brest p).innerText().Substring(name.Length)
+      CsvRow(pubscsv, [| name; rest |]) ]
+
+System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/turing/pubs.csv")
+pubscsv.Append(prows).Save(__SOURCE_DIRECTORY__ + "/turing/pubs.csv")
