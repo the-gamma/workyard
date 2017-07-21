@@ -277,7 +277,6 @@ let rows =
   lds @ ffs @ rfs @ dss 
   |> Seq.map (fun (n,u,r,p) -> CsvRow(people, [| n; u; r; p|]) )
 
-
 System.IO.File.Delete(__SOURCE_DIRECTORY__ + "/turing/people.csv")
 people.Append(rows).Save(__SOURCE_DIRECTORY__ + "/turing/people.csv")
 
