@@ -272,7 +272,7 @@ dss |> Seq.iter (printfn "%A")
 #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
 open FSharp.Data
 
-let people = CsvFile.Parse("Name,University,Role,Position")
+let people = CsvFile.Load(__SOURCE_DIRECTORY__ + "/turing/rse.csv")
 let rows = 
   lds @ ffs @ rfs @ dss 
   |> Seq.map (fun (n,u,r,p) -> CsvRow(people, [| n; u; r; p|]) )
@@ -283,10 +283,9 @@ people.Append(rows).Save(__SOURCE_DIRECTORY__ + "/turing/people.csv")
 
 
 // --------------------------------------------------------------------------------------
-// Get all Turing people
+// Get all Turing publications
 // --------------------------------------------------------------------------------------
 
-// Publications
 let pubs = downloadNodes "https://www.turing.ac.uk/publications/"
 
 let b1 = pubs |> firstTextPath "facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue" |> Seq.head

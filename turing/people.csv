@@ -1,14 +1,20 @@
 Name,University,Role,Position
+James Hetherington,The Alan Turing Institute, Head of Research Software Engineering,Research Software Engineering
+Martin O'Reilly,The Alan Turing Institute, Senior Research Software Engineer, Research Software Engineering
+James Geddes,The Alan Turing Institute, Acting Head of Research Software Engineering, Research Software Engineering
+Radka Jersakova,The Alan Turing Institute, Junior Data Scientist, The Alan Turing Institute
+May Yong,The Alan Turing Institute, Research Software Engineer, Research Software Engineering
 Professor Andrew Blake,The Alan Turing Institute,Leadership,Research Director
 Sir Alan Wilson,The Alan Turing Institute,Leadership,CEO
 Howard Covington,The Alan Turing Institute,Leadership,Chair
-Professor John Aston,The Alan Turing Institute,Leadership,Board of Trustees
+Howard Covington (Chair of Trustees),The Alan Turing Institute,Leadership,Board of Trustees
 Professor Peter Grindrod CBE,The Alan Turing Institute,Leadership,Board of Trustees
 Professor Richard Kenway OBE,The Alan Turing Institute,Leadership,Board of Trustees
 Dr Julie Maxton,The Alan Turing Institute,Leadership,Board of Trustees
 Wendy Tan White,The Alan Turing Institute,Leadership,Board of Trustees
 Professor Pam Thomas,The Alan Turing Institute,Leadership,Board of Trustees
 Dr Neil Viner,The Alan Turing Institute,Leadership,Board of Trustees
+Professor Patrick Wolfe,The Alan Turing Institute,Leadership,Board of Trustees
 Professor Graham Cormode,The Alan Turing Institute,Leadership,University Liaison Directors
 Professor David Pym,The Alan Turing Institute,Leadership,University Liaison Directors
 Professor Jared Tanner,The Alan Turing Institute,Leadership,University Liaison Directors
@@ -23,6 +29,22 @@ Prof Bin Yu,The Alan Turing Institute,Leadership,Scientific Advisory Board
 Mark Briers,The Alan Turing Institute,Leadership,Strategic Programme Directors
 Professor Mark Girolami FRSE,The Alan Turing Institute,Leadership,Strategic Programme Directors
 Anthony Lee,The Alan Turing Institute,Leadership,Strategic Programme Directors
+Professor Andrew Blake,The Alan Turing Institute,Leadership,Programme Committee
+Professor Graham Cormode,The Alan Turing Institute,Leadership,Programme Committee
+Professor Jon Crowcroft (Chair),The Alan Turing Institute,Leadership,Programme Committee
+Dr Philippa Hemmings,The Alan Turing Institute,Leadership,Programme Committee
+Dr Stephen Jarvis,The Alan Turing Institute,Leadership,Programme Committee
+Professor Ruth King,The Alan Turing Institute,Leadership,Programme Committee
+Professor Helen Margetts,The Alan Turing Institute,Leadership,Programme Committee
+Professor David Pym,The Alan Turing Institute,Leadership,Programme Committee
+Professor Jared Tanner,The Alan Turing Institute,Leadership,Programme Committee
+Professor Ulrike Tillmann,The Alan Turing Institute,Leadership,Programme Committee
+Professor Chris Williams,The Alan Turing Institute,Leadership,Programme Committee
+Sir Alan Wilson,The Alan Turing Institute,Leadership,Programme Committee
+Howard Covington (Chair),The Alan Turing Institute,Leadership,Commercial Development Board
+John Barker,The Alan Turing Institute,Leadership,Commercial Development Board
+Michael Ross,The Alan Turing Institute,Leadership,Commercial Development Board
+Hitesh Thakrar,The Alan Turing Institute,Leadership,Commercial Development Board
 Professor Jon Crowcroft,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Leonardo Bottolo,Cambridge,Faculty Fellow,Faculty Fellow
 Dr Quentin Berthet,Cambridge,Faculty Fellow,Faculty Fellow
@@ -97,14 +119,12 @@ Dr Ioanna Manolopoulou,UCL,Faculty Fellow,Faculty Fellow
 Dr Franz Kiraly,UCL,Faculty Fellow,Faculty Fellow
 Dr Ioannis Kosmidis,UCL,Faculty Fellow,Faculty Fellow
 Professor Petros Dellaportas,UCL,Faculty Fellow,Faculty Fellow
-Professor David Pym,UCL,Faculty Fellow,Faculty Fellow
 Dr Hao Ni,UCL,Faculty Fellow,Faculty Fellow
 Dr George Danezis,UCL,Faculty Fellow,Faculty Fellow
 Dr Weisi Guo,Warwick,Faculty Fellow,Faculty Fellow
 "Professor Graham Cormode (ULD, Warwick)",Warwick,Faculty Fellow,Faculty Fellow
 Professor Mark Girolami,Warwick,Faculty Fellow,Faculty Fellow
 Professor Rob Procter,Warwick,Faculty Fellow,Faculty Fellow
-Professor Tom Nichols,Warwick,Faculty Fellow,Faculty Fellow
 Professor Saul Jacka,Warwick,Faculty Fellow,Faculty Fellow
 Professor David Firth,Warwick,Faculty Fellow,Faculty Fellow
 Dr Anthony Lee,Warwick,Faculty Fellow,Faculty Fellow
@@ -115,7 +135,7 @@ Dr Krys Latuszynski,Warwick,Faculty Fellow,Faculty Fellow
 Dr Maria Liakata,Warwick,Faculty Fellow,Faculty Fellow
 Dr Suzy Moat,Warwick,Faculty Fellow,Faculty Fellow
 Dr Theo Damoulas,Warwick,Faculty Fellow,Faculty Fellow
-Dr Tobias Preis,Warwick,Faculty Fellow,Faculty Fellow
+Professor Tobias Preis,Warwick,Faculty Fellow,Faculty Fellow
 Dr Matthew Leeke,Warwick,Faculty Fellow,Faculty Fellow
 Dr Sebastian Vollmer,Warwick,Faculty Fellow,Faculty Fellow
 Joshua Loftus,Cambridge,Research Fellow,Research Fellow
@@ -137,6 +157,7 @@ Adria Gascon,Warwick,Research Fellow,Research Fellow
 Stephen Law,UCL,Research Fellow,Research Fellow
 Kirstie Whitaker,Cambridge,Research Fellow,Research Fellow
 Brent Mittelstadt,UCL,Research Fellow,Research Fellow
+Dr Sandra Wachter,Oxford,Research Fellow,Research Fellow
 Adilet Otemissov,Oxford,Doctoral Student,Doctoral Student
 Alex Bird,Edinburgh,Doctoral Student,Doctoral Student
 Andreas Grammenos,Cambridge,Doctoral Student,Doctoral Student
@@ -150,6 +171,7 @@ Hilmi Majid,Warwick,Doctoral Student,Doctoral Student
 Nicole Peinelt,Warwick,Doctoral Student,Doctoral Student
 Odysseas Sclavounis,Oxford,Doctoral Student,Doctoral Student
 Shouto Yonekura,UCL,Doctoral Student,Doctoral Student
+Vidhi Lalchand,Cambridge,Doctoral Student,Doctoral Student
 Daniel Duma,Edinburgh,Doctoral Student,Doctoral Student
 Chanuki Seresinhe,Warwick,Doctoral Student,Doctoral Student
 Bingyu Zhao,Cambridge,Doctoral Student,Doctoral Student
