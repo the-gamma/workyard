@@ -224,7 +224,7 @@ let ffs =
   [ for f in matchPath fpath fellows ->
       let name = (matchPath fname f).text()
       let uni = (matchPath funi f).innerText().Substring(name.Length)
-      name, uni, "Faculty Fellow", "Faculty Fellow" ]
+      name, uni, "Turing Fellow", "Turing Fellow" ]
   
 ffs |> Seq.length
 ffs |> Seq.iter (printfn "%A")
